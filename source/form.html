@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+</head>
+
+<body class="body">
+  <header class="main-header">
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list visually-hidden">
+          <li class="site-list__item site-list__item--current">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-header__logo">
+            <a href="index.html"> <img class="main-header__logo-image" src="/source/img/logo.svg" width="185"
+                height="96" alt="Логотип Седона">
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <main class="main-container">
+
+    <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ</h1>
+
+    <section class="banner">
+      <div class="banner__wrapper">
+        <header class="banner__header">
+          <h2 class="visually-hidden">
+            SEDONA
+          </h2>
+          <p class="banner__slogan">
+            <img class="banner__picture" src="/source/img/sedona-mobile.svg" width="229" height="39"
+              alt="sedona-mobile">
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="review__wrapper">
+        <h2 class="review__header">
+          Оставьте свой отзыв!
+        </h2>
+        <p class="review__text">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="form__wrapper">
+        <h2 class="application__title">Представьтесь:</h2>
+
+        <p class="form__name">ИМЯ*:</p>
+        <input type="text" id="name" placeholder="Петр" required>
+        <br />
+        <p class="form__surmname">ФАМИЛИЯ*:</p>
+        <input type="text" id="surname" placeholder="Пустота" required>
+        <br />
+
+        <p class="form__patronymic">ОТЧЕСТВО:</p>
+        <input type="text" id="patronymic" placeholder="Викторович">
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__wrapper">
+        <h2 class="contact__header">Контактная информация:</h2>
+        <form class="contact__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="contact__phone-lable">Контактный телефон*:</label>
+          <input class="contact__phone-input" type="text" id="contat__phone" name="contact__phone required"
+            placeholder="Введите телефон">
+          <br>
+          <label class="contact__mail-lable">Электронная почта*:</label>
+          <input class="contact__mail-input" type="email" placeholder="Введите e-mail" name="contact__mail"
+            id="contact__name" required>
+        </form>
+      </div>
+    </section>
+
+    <section class="impression">
+      <div class="impression__wrapper">
+        <h2 class="visually-hidden">общее впечатление</h2>
+        <fieldset class="impression__group">
+          <legend class="impression__title">Ваше общее впечатление:</legend>
+          <ul class="impression__list">
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="impression__radio visually-hidden" type="radio" name="impression__group"
+                  value="Скорее положительное">
+                Скорее положительное
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="impression__radio visually-hidden" type="radio" name="impression__group"
+                  value="Скорее отрицательное">
+                Скорее отрицательное
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="impression__radio visually-hidden" type="radio" name="impression__group"
+                  value="Затрудняюсь ответить">
+                Затрудняюсь ответить
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="
+    attractions">
+      <div class="
+      attractions__wrapper">
+        <h2 class="visually-hidden">впечатление о достопримечательностях</h2>
+        <fieldset class="
+        attractions__group">
+          <legend class="
+          attractions__title">посещенные достопримечательности:</legend>
+          <ul class="
+          attractions__list">
+            <li class="
+            attractions__item">
+              <label class="
+              attractions__control">
+                <input class="
+                attractions__checkbox visually-hidden" type="checkbox" name="
+                attractions__group" value=" Мост Дьявола" checked>
+                Мост Дьявола
+              </label>
+            </li>
+
+            <li class="
+            attractions__item">
+              <label class="
+              attractions__control">
+                <input class="
+                attractions__checkbox visually-hidden" type="checkbox" name="
+                attractions__group" value="Гора-Колокол" checked>
+                Гора-Колокол
+              </label>
+            </li>
+
+            <li class="
+            attractions__item">
+              <label class="
+              attractions__control">
+                <input class="
+                attractions__checkbox visually-hidden" type="checkbox" name="attractions__group" value="Красные скалы"
+                  checked>
+                Красные скалы
+              </label>
+            </li>
+
+            <li class="attractions__item">
+              <label class="attractions__control">
+                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                  value="Слайд-парк">
+                Слайд-парк
+              </label>
+            </li>
+
+          </ul>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="review__wrapper">
+        <h2 class="review__title">Опишите свои эмоции:</h2>
+        <textarea id='review__feedback' name='review__feedback' rows='4' cols='50'>
+          Опишите подробно все свои восторги
+          </textarea>
+        <a class="review__button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+        <p class="review__
+        footnote">* — обязательные поля</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__hashtag">
+        <a class="main-footer__link" href="#">
+          #VISITSEDONA
+        </a>
+      </div>
+
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy">
+              VK
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link-telegram" href="https://t.me/htmlacademy">
+              Telegram
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link-yotube" href="https://www.youtube.com/user/htmlacademyru">
+              Youtube
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">РАЗРАБОТАНО</b>
+        <a class="copyright__link" href="/https:/htmlacademy.ru/intensive/adaptive">
+          <svg width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_77987_31)">
+              <path
+                d="M14.65 0.949951H14.55L1.05005 2.34995V27.05L14.55 35.0499L27.95 27.05V2.34995L14.65 0.949951ZM26.05 13.05L14.55 6.24995V6.14995H14.45L14.35 6.04995V6.14995L2.95005 13.05V4.04995L14.45 2.84995L26.05 4.04995V13.05ZM14.45 7.74995L25.95 14.45L21.45 17.05L14.35 12.85V14.25L20.25 17.75L19.35 18.25L14.35 15.25V16.65L18.15 18.95L17.35 19.45L14.35 17.65V19.05L16.25 20.15L14.45 21.25L3.05005 14.55L14.45 7.74995ZM2.95005 16.05L14.35 22.85V23.85L6.45005 19.15V20.55L14.45 25.35V26.45L6.45005 21.75V23.15L14.45 27.95L22.55 23.05V17.85L25.95 15.85V25.85L14.45 32.75L2.95005 25.95V16.05Z"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_77987_31">
+                <rect width="28" height="35" fill="white" transform="translate(0.5 0.5)" />
+              </clipPath>
+            </defs>
+          </svg>
+
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
