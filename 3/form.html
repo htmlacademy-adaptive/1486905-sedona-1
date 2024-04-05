@@ -27,8 +27,8 @@
             </a>
           </li>
           <li class="main-header__logo">
-            <a href="index.html"> <img class="main-header__logo-image" src="/source/img/logo.svg" width="185"
-                height="96" alt="Логотип Седона">
+            <a href="index.html"> <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96"
+                alt="Логотип Седона">
             </a>
           </li>
           <li class="site-list__item">
@@ -57,8 +57,7 @@
             SEDONA
           </h2>
           <p class="banner__slogan">
-            <img class="banner__picture" src="/source/img/sedona-mobile.svg" width="229" height="39"
-              alt="sedona-mobile">
+            <img class="banner__picture" src="img/sedona-mobile.svg" width="229" height="39" alt="sedona-mobile">
           </p>
         </header>
       </div>
@@ -75,19 +74,21 @@
       </div>
     </section>
 
-    <section class="form">
-      <div class="form__wrapper">
-        <h2 class="application__title">Представьтесь:</h2>
+    <section class="surname">
+      <div class="surname__wrapper">
+        <h2 class="surname__title">Представьтесь:</h2>
 
-        <p class="form__name">ИМЯ*:</p>
-        <input type="text" id="name" placeholder="Петр" required>
-        <br />
-        <p class="form__surmname">ФАМИЛИЯ*:</p>
-        <input type="text" id="surname" placeholder="Пустота" required>
-        <br />
+        <form class="surname__form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="surname__name">ИМЯ*:</p>
+          <input type="text" id="name" placeholder="Петр" required>
 
-        <p class="form__patronymic">ОТЧЕСТВО:</p>
-        <input type="text" id="patronymic" placeholder="Викторович">
+          <p class="surname__surmname">ФАМИЛИЯ*:</p>
+          <input type="text" id="surname" placeholder="Пустота" required>
+
+
+          <p class="surname__patronymic">ОТЧЕСТВО:</p>
+          <input type="text" id="patronymic" placeholder="Викторович">
+        </form>
 
       </div>
     </section>
@@ -99,7 +100,9 @@
           <label class="contact__phone-lable">Контактный телефон*:</label>
           <input class="contact__phone-input" type="text" id="contat__phone" name="contact__phone required"
             placeholder="Введите телефон">
-          <br>
+        </form>
+
+        <form class="contact__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="contact__mail-lable">Электронная почта*:</label>
           <input class="contact__mail-input" type="email" placeholder="Введите e-mail" name="contact__mail"
             id="contact__name" required>
@@ -111,100 +114,91 @@
       <div class="impression__wrapper">
         <h2 class="visually-hidden">общее впечатление</h2>
         <fieldset class="impression__group">
-          <legend class="impression__title">Ваше общее впечатление:</legend>
-          <ul class="impression__list">
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="impression__radio visually-hidden" type="radio" name="impression__group"
-                  value="Скорее положительное">
-                Скорее положительное
-              </label>
-            </li>
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="impression__radio visually-hidden" type="radio" name="impression__group"
-                  value="Скорее отрицательное">
-                Скорее отрицательное
-              </label>
-            </li>
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="impression__radio visually-hidden" type="radio" name="impression__group"
-                  value="Затрудняюсь ответить">
-                Затрудняюсь ответить
-              </label>
-            </li>
-          </ul>
+          <form class="impression__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="impression__title">Ваше общее впечатление:</label>
+            <ul class="impression__list">
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="impression__radio visually-hidden" type="radio" name="impression__group"
+                    value="Скорее положительное">
+                  Скорее положительное
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="impression__radio visually-hidden" type="radio" name="impression__group"
+                    value="Скорее отрицательное">
+                  Скорее отрицательное
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="impression__radio visually-hidden" type="radio" name="impression__group"
+                    value="Затрудняюсь ответить">
+                  Затрудняюсь ответить
+                </label>
+              </li>
+            </ul>
+          </form>
         </fieldset>
       </div>
     </section>
 
-    <section class="
-    attractions">
-      <div class="
-      attractions__wrapper">
+    <section class="attractions">
+      <div class="attractions__wrapper">
         <h2 class="visually-hidden">впечатление о достопримечательностях</h2>
-        <fieldset class="
-        attractions__group">
-          <legend class="
-          attractions__title">посещенные достопримечательности:</legend>
-          <ul class="
-          attractions__list">
-            <li class="
-            attractions__item">
-              <label class="
-              attractions__control">
-                <input class="
-                attractions__checkbox visually-hidden" type="checkbox" name="
-                attractions__group" value=" Мост Дьявола" checked>
-                Мост Дьявола
-              </label>
-            </li>
+        <fieldset class="attractions__group">
+          <form class="attractions__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="attractions__title">посещенные достопримечательности:</label>
+            <ul class="attractions__list">
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                    value=" Мост Дьявола" checked>
+                  Мост Дьявола
+                </label>
+              </li>
 
-            <li class="
-            attractions__item">
-              <label class="
-              attractions__control">
-                <input class="
-                attractions__checkbox visually-hidden" type="checkbox" name="
-                attractions__group" value="Гора-Колокол" checked>
-                Гора-Колокол
-              </label>
-            </li>
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                    value="Гора-Колокол" checked>
+                  Гора-Колокол
+                </label>
+              </li>
 
-            <li class="
-            attractions__item">
-              <label class="
-              attractions__control">
-                <input class="
-                attractions__checkbox visually-hidden" type="checkbox" name="attractions__group" value="Красные скалы"
-                  checked>
-                Красные скалы
-              </label>
-            </li>
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                    value="Красные скалы" checked>
+                  Красные скалы
+                </label>
+              </li>
 
-            <li class="attractions__item">
-              <label class="attractions__control">
-                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
-                  value="Слайд-парк">
-                Слайд-парк
-              </label>
-            </li>
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                    value="Слайд-парк">
+                  Слайд-парк
+                </label>
+              </li>
 
-          </ul>
+            </ul>
+          </form>
         </fieldset>
       </div>
     </section>
 
     <section class="review">
       <div class="review__wrapper">
-        <h2 class="review__title">Опишите свои эмоции:</h2>
-        <textarea id='review__feedback' name='review__feedback' rows='4' cols='50'>
+        <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="review__title">Опишите свои эмоции:</h2>
+          <textarea id='review__feedback' name='review__feedback' rows='4' cols='50'>
           Опишите подробно все свои восторги
           </textarea>
-        <a class="review__button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
-        <p class="review__
-        footnote">* — обязательные поля</p>
+          <a class="review__button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+          <p class="review__footnote">* — обязательные поля</p>
+        </form>
       </div>
     </section>
   </main>
