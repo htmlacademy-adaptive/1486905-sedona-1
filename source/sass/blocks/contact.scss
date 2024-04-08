@@ -1,0 +1,52 @@
+.contact__wrapper {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+}
+
+.contact__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+}
+
+.contact__phone-lable {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 1);
+}
+
+.contact__mail-lable {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 1);
+}
+
+.contact__phone-input {
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(242, 242, 242, 1);
+  border-width: inherit;
+  padding: 16px;
+}
+
+.contact__mail-input {
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(242, 242, 242, 1);
+  border-width: inherit;
+  padding: 16px;
+}
