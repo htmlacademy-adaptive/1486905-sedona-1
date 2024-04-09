@@ -9,7 +9,7 @@
   line-height: 26px;
   font-weight: 900;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .review__text {
@@ -17,7 +17,7 @@
   line-height: 21px;
   font-weight: 600;
   text-transform: uppercase;
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
 }
 
 .review__title {
@@ -25,7 +25,7 @@
   line-height: 26px;
   font-weight: 800;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .review__textarea {
@@ -33,16 +33,16 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
-  color: rgba(0, 0, 0, 0.3);
-  background-color: rgba(242, 242, 242, 1);
+  color: #0000004d;
+  background-color: #f2f2f2;
   padding: 16px;
 }
 
 .review__button {
-  background-color: rgba(129, 179, 210, 1);
+  background-color: #81b3d2;
   display: block;
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   font-family: 'PT Sans';
   font-size: 21px;
   line-height: 26px;
