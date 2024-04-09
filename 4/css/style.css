@@ -1,0 +1,496 @@
+.main-nav {
+  background-color: #81b3d2;
+}
+
+.main-nav__list {
+  font-style: bold;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 26px;
+  color: white;
+}
+
+.site-list__item {
+  display: block;
+  text-decoration: none;
+  padding-top: 17px;
+  padding-left: 108px;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.main-header__logo {
+  display: block;
+  text-decoration: none;
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  -webkit-text-decoration-color: none;
+          text-decoration-color: none;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 900;
+  src: url("../fonts/ptsansbold.woff") format("woff2");
+  font-display: swap;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  min-width: 320px;
+}
+
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.banner__wrapper {
+  background-image: url(/source/img/back-mobile.jpg);
+  width: 320px;
+  height: 389px;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-left: 19px;
+}
+
+.advantages__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.advantages__causes {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.advantages__item {
+  background-color: #81b3d2;
+  color: white;
+}
+
+.advantages__item--white {
+  background-color: #eeeeee;
+}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.advantages__title--black {
+  color: black;
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.advantages__description--black {
+  color: black;
+}
+
+.advantages__pross-title {
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.advantages__pross-description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+}
+
+.advantages__pross-item {
+  display: block;
+  text-decoration: none;
+}
+
+.application__wrapper {
+  padding-top: 38px;
+  padding-left: 29px;
+  padding-bottom: 49px;
+}
+
+.application__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.application__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.application__find {
+  color: white;
+  background-color: #81b3d2;
+  display: block;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: max-content;
+  padding: 16px 49px;
+}
+
+.map__wrapper {
+  width: 320px;
+  height: 350px;
+}
+
+.map {
+  margin-bottom: 8px;
+}
+
+.main-footer__link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 800;
+}
+
+.main-footer__wrapper {
+  padding-top: 33px;
+  padding-left: 82px;
+}
+
+.social__list {
+  display: flex;
+  gap: 8px;
+}
+
+.social__item {
+  display: block;
+  text-decoration: none;
+  background-color: #81b3d2;
+  width: 36px;
+  height: 36px;
+  padding: 12px;
+}
+
+.review__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 36px;
+}
+
+.review__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+}
+
+.review__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.review__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: black;
+}
+
+.review__textarea {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
+  padding: 16px;
+}
+
+.review__button {
+  background-color: #81b3d2;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: "PT Sans";
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: max-content;
+  padding: 16px 49px;
+}
+
+.review__footnote {
+  font-family: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.surname__wrapper {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 39px;
+}
+
+.surname__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+}
+
+.surname__name {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.surname__input {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: black;
+  background-color: #f2f2f2;
+  border-width: inherit;
+  padding: 16px;
+}
+
+.contact__wrapper {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+}
+
+.contact__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+}
+
+.contact__phone-lable {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.contact__mail-lable {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.contact__phone-input {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: black;
+  background-color: #f2f2f2;
+  border-width: inherit;
+  padding: 16px;
+}
+
+.contact__mail-input {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: black;
+  background-color: #f2f2f2;
+  border-width: inherit;
+  padding: 16px;
+}
+
+.impression__wrapper {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+}
+
+.impression__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+}
+
+.impression__control {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: black;
+}
+
+.impression__item {
+  display: block;
+  text-decoration: none;
+}
+
+.attractions__wrapper {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+}
+
+.attractions__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+}
+
+.attractions__control {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: black;
+}
+
+.attractions__item {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery__wrapper {
+  padding-top: 37px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+.gallery__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+}
+
+.gallery__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.gallery__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: black;
+}
+
+.gallery__author {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.gallery__likes {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 800;
+  color: black;
+}
+
+.video__wrapper {
+  padding-top: 17px;
+  padding-left: 28px;
+  padding-right: 26px;
+}
+
+.video__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+}
+
+.video__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+/*# sourceMappingURL=style.css.map */
