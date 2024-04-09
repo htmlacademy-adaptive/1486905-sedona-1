@@ -1,0 +1,27 @@
+.main-footer__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 800;
+}
+
+.main-footer__wrapper {
+  padding-top: 33px;
+  padding-left: 82px;
+}
+
+.social__list {
+  display: flex;
+  gap: 8px;
+}
+
+.social__item {
+  display: block;
+  text-decoration: none;
+  background-color: #81b3d2;
+  width: 36px;
+  height: 36px;
+  padding: 12px;
+}

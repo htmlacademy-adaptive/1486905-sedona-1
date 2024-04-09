@@ -1,0 +1,52 @@
+.contact__wrapper {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+}
+
+.contact__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contact__phone-lable {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.contact__mail-lable {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.contact__phone-input {
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-width: inherit;
+  padding: 16px;
+}
+
+.contact__mail-input {
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-width: inherit;
+  padding: 16px;
+}
