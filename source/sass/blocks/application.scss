@@ -2,12 +2,27 @@
   padding-top: 38px;
   padding-left: 29px;
   padding-bottom: 49px;
+  margin: 0 auto;
 }
 .application__title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 800;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .application__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .application__title {
+    line-height: 30px;
+  }
 }
 
 .application__description{
@@ -15,6 +30,7 @@
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .application__find {
@@ -28,4 +44,5 @@
   text-transform: uppercase;
   width: max-content;
   padding: 16px 49px;
+  margin: 0 auto;
 }

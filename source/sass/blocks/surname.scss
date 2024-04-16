@@ -11,6 +11,7 @@
   font-weight: 900;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
 }
 
 .surname__name {
@@ -30,4 +31,5 @@
   background-color: #f2f2f2;
   border-width: inherit;
   padding: 16px;
+  width: -webkit-fill-available;
 }

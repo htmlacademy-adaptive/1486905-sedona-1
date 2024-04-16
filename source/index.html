@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Седона</title>
 </head>
@@ -15,21 +16,21 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <a class="site-list__link" href="index.html"> <img class="main-header__logo-image" src="img/logo.svg"
-            width="185" height="96" alt="Логотип Седона">
+        <a class="site-list__link site-list__link--logo" href="index.html"> <img class="main-header__logo-image"
+            src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
         </a>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">
+          <li class="site-list__item site-list__item--main">
+            <a class="site-list__link site-list__link--current" href="#">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--grid">
             <a class="site-list__link" href="#">
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--column">
             <a class="site-list__link" href="#">
               Форма отзыва
             </a>
@@ -54,9 +55,10 @@
           <h2 class="visually-hidden">
             Welcome to the gorgerous
           </h2>
-          <p class="banner__slogan">
-            <img class="banner__picture" src="img/sedona.svg" width="282" height="214" alt="sedona">
-          </p>
+          <div class="banner__slogan">
+            <div class="banner__picture">
+            </div>
+          </div>
         </header>
         <div class="banner__intro">
           <h2 class="visually-hidden">
@@ -73,12 +75,12 @@
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Премущества Седоны</h2>
         <h2 class="advantages__header">
-          СЕДОНА — небольшой<br>
-          городок в АРИЗОНЕ,<br>
+          СЕДОНА — небольшой
+          городок в АРИЗОНЕ,
           заслуживающий большего!
         </h2>
         <p class="advantages__causes">
-          Рассмотрим 5 причин, по которым<br>
+          Рассмотрим 5 причин, по которым
           Седона круче, чем гранд каньон!
         </p>
         <ul class="advantages__list">
@@ -89,9 +91,11 @@
               СЕДОНА не АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br>
               там ТЕЧЕТ СВОЯ ЖИЗНЬ
             </p>
-            <img src="img/home.jpg" width="320" height="360" alt="Жилье">
           </li>
 
+          <li class="advantages__causes advantages__causes--home">
+            <div class="advantages__home"></div>
+          </li>
 
           <li class="advantages__pross-item">
             <svg width="81" height="73" viewBox="0 0 81 73" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,17 +164,17 @@
               Не только китайского, но и<br>
               местного производства!</p>
           </li>
-
-          <li class="advantages__item">
+          <li class="advantages__causes advantages__causes--devil">
+            <div class="advantages__devil"></div>
+          </li>
+          <li class="advantages__item advantages__item--column">
             <h3 class="advantages__title">Там есть Мост дьявола</h3>
             <p class="advantages__description">
               — №2 —<br>
               Да, по нему можно пройти! Если вы<br>
               осмелитесь, конечно
             </p>
-            <img src="img/devil.jpg" width="320" height="360" alt="Мост дьявола">
           </li>
-
           <li class="advantages__item advantages__item--white">
             <h3 class="advantages__title advantages__title--black">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <p class="advantages__description advantages__description--black">
@@ -205,9 +209,9 @@
     <section class="application">
       <div class="application__wrapper">
         <h2 class="application__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="application__description">Укажите предполагаемые даты<br>
+        <p class="application__description">Укажите предполагаемые даты
           поездки,
-          и мы покажем вам лучшие<br>
+          и мы покажем вам лучшие
           предложения гостиниц в седоне</p>
         <a class="button application__find" href="#">НАЙТИ ГОСТИНИЦУ</a>
       </div>
@@ -216,7 +220,7 @@
     <section class="map">
       <div class="map__wrapper">
         <h2 class="visually-hidden">Карта с Седоной</h2>
-        <iframe
+        <iframe class="map__frame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.136884983505!2d-111.8363379779566!3d34.854441887899945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1711126515675!5m2!1sru!2sru"
           width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>

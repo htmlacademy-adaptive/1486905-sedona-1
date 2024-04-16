@@ -10,6 +10,7 @@
   font-weight: 900;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
 }
 
 .review__text {
@@ -18,6 +19,7 @@
   font-weight: 600;
   text-transform: uppercase;
   color: #333333;
+  text-align: center;
 }
 
 .review__title {
@@ -26,6 +28,7 @@
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
 }
 
 .review__textarea {
@@ -46,15 +49,23 @@
   font-family: 'PT Sans';
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   width: max-content;
   padding: 16px 49px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .review__button {
+    margin: 0;
+  }
 }
 
 .review__footnote {
-  font-family: 12px;
+  font-size: 12px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: end;
 }

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Седона</title>
 </head>
@@ -15,27 +16,27 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <a href="index.html"> <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96"
-            alt="Логотип Седона">
+        <a class="site-list__link site-list__link--logo" href="index.html"> <img class="main-header__logo-image"
+            src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
         </a>
-        <ul class="main-nav__list site-list visually-hidden">
-          <li class="site-list__item site-list__item--current">
-            <a href="#">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--main">
+            <a class="site-list__link site-list__link--current" href="#">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">
+          <li class="site-list__item site-list__item--grid">
+            <a class="site-list__link" href="#">
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">
+          <li class="site-list__item site-list__item--column">
+            <a class="site-list__link" href="#">
               Форма отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               HTML ACADEMY
             </a>
           </li>
@@ -54,9 +55,9 @@
           <h2 class="visually-hidden">
             SEDONA
           </h2>
-          <p class="banner__slogan">
-            <img class="banner__picture" src="img/sedona-mobile.svg" width="229" height="39" alt="sedona-mobile">
-          </p>
+          <div class="banner__slogan">
+            <div class="banner__picture"></div>
+          </div>
         </header>
       </div>
     </section>
@@ -74,145 +75,137 @@
         </p>
       </div>
     </section>
-
     <form action="https://echo.htmlacademy.ru/" method="post">
-      <section class="surname">
-        <div class="surname__wrapper">
-          <h2 class="surname__title">Представьтесь:</h2>
-
-
-          <p class="surname__name">ИМЯ*:</p>
-          <input class="surname__input" type="text" id="name" placeholder="Петр" required>
-
-          <p class="surname__surmname">ФАМИЛИЯ*:</p>
-          <input class="surname__input" type="text" id="surname" placeholder="Пустота" required>
-
-
-          <p class="surname__patronymic">ОТЧЕСТВО:</p>
-          <input class="surname__input" type="text" id="patronymic" placeholder="Викторович">
-
-
+      <div class="communication">
+        <div>
+          <section class="surname">
+            <div class="surname__wrapper">
+              <h2 class="surname__title">Представьтесь:</h2>
+              <p class="surname__name">ИМЯ*:</p>
+              <input class="surname__input" type="text" id="name" placeholder="Петр" required>
+              <p class="surname__surmname">ФАМИЛИЯ*:</p>
+              <input class="surname__input" type="text" id="surname" placeholder="Пустота" required>
+              <p class="surname__patronymic">ОТЧЕСТВО:</p>
+              <input class="surname__input" type="text" id="patronymic" placeholder="Викторович">
+            </div>
+          </section>
         </div>
-      </section>
+        <div>
+          <section class="contact">
+            <div class="contact__wrapper">
+              <h2 class="contact__header">Контактная информация:</h2>
 
-      <section class="contact">
-        <div class="contact__wrapper">
-          <h2 class="contact__header">Контактная информация:</h2>
+              <label class="contact__phone-lable">Контактный телефон*:</label>
+              <input class="contact__phone-input" type="text" id="contat__phone" name="contact__phone required"
+                placeholder="Введите телефон">
+              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="58" height="58" fill="#E6E6E6" />
+                <path
+                  d="M23.6 27.8C25 30.6 27.4 32.9 30.2 34.4L32.4 32.2C32.7 31.9 33.1 31.8 33.4 32C34.5 32.4 35.7 32.6 37 32.6C37.6 32.6 38 33 38 33.6V37C38 37.6 37.6 38 37 38C27.6 38 20 30.4 20 21C20 20.4 20.4 20 21 20H24.5C25.1 20 25.5 20.4 25.5 21C25.5 22.2 25.7 23.4 26.1 24.6C26.2 24.9 26.1 25.3 25.9 25.6L23.6 27.8Z"
+                  fill="#010101" />
+              </svg>
 
-          <label class="contact__phone-lable">Контактный телефон*:</label>
-          <input class="contact__phone-input" type="text" id="contat__phone" name="contact__phone required"
-            placeholder="Введите телефон">
-          <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="58" height="58" fill="#E6E6E6" />
-            <path
-              d="M23.6 27.8C25 30.6 27.4 32.9 30.2 34.4L32.4 32.2C32.7 31.9 33.1 31.8 33.4 32C34.5 32.4 35.7 32.6 37 32.6C37.6 32.6 38 33 38 33.6V37C38 37.6 37.6 38 37 38C27.6 38 20 30.4 20 21C20 20.4 20.4 20 21 20H24.5C25.1 20 25.5 20.4 25.5 21C25.5 22.2 25.7 23.4 26.1 24.6C26.2 24.9 26.1 25.3 25.9 25.6L23.6 27.8Z"
-              fill="#010101" />
-          </svg>
+              <label class="contact__mail-lable">Электронная почта*:</label>
+              <input class="contact__mail-input" type="email" placeholder="Введите e-mail" name="contact__mail"
+                id="contact__name" required>
+              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="58" height="58" fill="#E6E6E6" />
+                <path
+                  d="M29 31C28.7 31 28.5 30.9 28 30.7L21 27V34C21 34.5 21.5 35 22 35H36C36.5 35 37 34.5 37 34V27L30 30.7C29.5 30.9 29.3 31 29 31ZM36 23H22C21.5 23 21 23.5 21 24V24.8L29 29L37 24.8V24C37 23.5 36.5 23 36 23Z"
+                  fill="black" />
+              </svg>
 
-          <label class="contact__mail-lable">Электронная почта*:</label>
-          <input class="contact__mail-input" type="email" placeholder="Введите e-mail" name="contact__mail"
-            id="contact__name" required>
-          <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="58" height="58" fill="#E6E6E6" />
-            <path
-              d="M29 31C28.7 31 28.5 30.9 28 30.7L21 27V34C21 34.5 21.5 35 22 35H36C36.5 35 37 34.5 37 34V27L30 30.7C29.5 30.9 29.3 31 29 31ZM36 23H22C21.5 23 21 23.5 21 24V24.8L29 29L37 24.8V24C37 23.5 36.5 23 36 23Z"
-              fill="black" />
-          </svg>
-
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
+    </form>
 
-      <section class="impression">
-        <div class="impression__wrapper">
-          <h2 class="visually-hidden">общее впечатление</h2>
-          <fieldset class="impression__group">
 
-            <label class="impression__title">Ваше общее впечатление:</label>
-            <ul class="impression__list">
-              <li class="impression__item">
-                <label class="impression__control">
-                  <input class="impression__radio" type="radio" name="impression__group" value="Скорее положительное">
-                  Скорее положительное
-                </label>
-              </li>
-              <li class="impression__item">
-                <label class="impression__control">
-                  <input class="impression__radio" type="radio" name="impression__group" value="Скорее отрицательное">
-                  Скорее отрицательное
-                </label>
-              </li>
-              <li class="impression__item">
-                <label class="impression__control">
-                  <input class="impression__radio" type="radio" name="impression__group" value="Затрудняюсь ответить">
-                  Затрудняюсь ответить
-                </label>
-              </li>
-            </ul>
+    <section class="impression">
+      <div class="impression__wrapper">
+        <h2 class="visually-hidden">общее впечатление</h2>
+        <fieldset class="impression__group">
 
-          </fieldset>
-        </div>
-      </section>
+          <label class="impression__title">Ваше общее впечатление:</label>
+          <ul class="impression__list">
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="impression__radio" type="radio" name="impression__group" value="Скорее положительное">
+                Скорее положительное
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="impression__radio" type="radio" name="impression__group" value="Скорее отрицательное">
+                Скорее отрицательное
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="impression__radio" type="radio" name="impression__group" value="Затрудняюсь ответить">
+                Затрудняюсь ответить
+              </label>
+            </li>
+          </ul>
 
-      <section class="attractions">
-        <div class="attractions__wrapper">
-          <h2 class="visually-hidden">впечатление о достопримечательностях</h2>
-          <fieldset class="attractions__group">
+        </fieldset>
+      </div>
+    </section>
 
-            <label class="attractions__title">посещенные достопримечательности:</label>
-            <ul class="attractions__list">
-              <li class="attractions__item">
-                <label class="attractions__control">
-                  <input class="attractions__checkbox" type="checkbox" name="attractions__group" value=" Мост Дьявола"
-                    checked>
-                  Мост Дьявола
-                </label>
-              </li>
+    <section class="attractions">
+      <div class="attractions__wrapper">
+        <h2 class="visually-hidden">впечатление о достопримечательностях</h2>
+        <fieldset class="attractions__group">
 
-              <li class="attractions__item">
-                <label class="attractions__control">
-                  <input class="attractions__checkbox" type="checkbox" name="attractions__group" value="Гора-Колокол"
-                    checked>
-                  Гора-Колокол
-                </label>
-              </li>
+          <label class="attractions__title">посещенные достопримечательности:</label>
+          <ul class="attractions__list">
+            <li class="attractions__item">
+              <label class="attractions__control">
+                <input class="attractions__checkbox" type="checkbox" name="attractions__group" value=" Мост Дьявола"
+                  checked>
+                Мост Дьявола
+              </label>
+            </li>
 
-              <li class="attractions__item">
-                <label class="attractions__control">
-                  <input class="attractions__checkbox" type="checkbox" name="attractions__group" value="Красные скалы"
-                    checked>
-                  Красные скалы
-                </label>
-              </li>
+            <li class="attractions__item">
+              <label class="attractions__control">
+                <input class="attractions__checkbox" type="checkbox" name="attractions__group" value="Гора-Колокол"
+                  checked>
+                Гора-Колокол
+              </label>
+            </li>
 
-              <li class="attractions__item">
-                <label class="attractions__control">
-                  <input class="attractions__checkbox" type="checkbox" name="attractions__group" value="Слайд-парк">
-                  Слайд-парк
-                </label>
-              </li>
+            <li class="attractions__item">
+              <label class="attractions__control">
+                <input class="attractions__checkbox" type="checkbox" name="attractions__group" value="Красные скалы"
+                  checked>
+                Красные скалы
+              </label>
+            </li>
 
-            </ul>
-
-          </fieldset>
-        </div>
-      </section>
-
-      <section class="review">
-        <div class="review__wrapper">
-
-          <h2 class="review__title">Опишите свои эмоции:</h2>
-          <textarea class="review__textarea" id='review__feedback' name='review__feedback' rows='4' cols='50'>
+            <li class="attractions__item">
+              <label class="attractions__control">
+                <input class="attractions__checkbox" type="checkbox" name="attractions__group" value="Слайд-парк">
+                Слайд-парк
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </section>
+    <section class="review">
+      <div class="review__wrapper">
+        <h2 class="review__title">Опишите свои эмоции:</h2>
+        <textarea class="review__textarea" id='review__feedback' name='review__feedback' rows='4' cols='30'>
           Опишите подробно все свои
           восторги
           </textarea>
-          <a class="review__button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
-          <p class="review__footnote">* — обязательные поля</p>
-
-        </div>
-      </section>
-    </form>
+        <a class="review__button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+        <p class="review__footnote">* — обязательные поля</p>
+      </div>
+    </section>
   </main>
-
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__hashtag">
