@@ -12,7 +12,7 @@ color: #000000;
 text-align: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: $tablet-width){
 .video__title {
 font-size: 30px;
 line-height: 26px;
@@ -30,23 +30,20 @@ justify-content: center;
 }
 
 .video__picture {
-background-image: url(../img/video-mobile.jpg);
 background-repeat: no-repeat;
 width: 280px;
 height: 177px;
 }
 
-@media (min-width: 768px){
+@media (min-width: $tablet-width){
 .video__picture{
-background-image: url(../img/video-tablet.jpg);
 width: 648px;
 height: 500px;
 }
 }
 
-@media (min-width: 1200px){
+@media (min-width: $desktop-width){
 .video__picture{
-background-image: url(../img/video-desktop.jpg);
 width: 800px;
 height: 500px;
 }

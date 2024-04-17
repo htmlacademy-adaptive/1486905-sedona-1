@@ -27,7 +27,12 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+.impression__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width){
 .impression__list {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -37,7 +42,7 @@ grid-row-gap: 0px;
 }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width){
 .impression__list {
 display: flex;
 gap: 28px;

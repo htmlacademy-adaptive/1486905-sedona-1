@@ -7,7 +7,7 @@
   padding-top: 52px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .banner__wrapper{
     background-image: url(../img/SEDONA-table.svg);
     width: 457px;
@@ -16,7 +16,7 @@
   }
 }
 
-@media (min-width:768px){
+@media (min-width:$tablet-width){
 .banner__wrapper {
 background-image: url(../img/tablet.jpg);
 width: 768px;
@@ -25,7 +25,7 @@ background-repeat: no-repeat;
 }
 }
 
-@media (min-width: 1200px){
+@media (min-width: $desktop-width){
 .banner__wrapper {
 background-image: url(../img/desktop.jpg);
 width: 1200px;
@@ -35,22 +35,18 @@ background-repeat: no-repeat;
 }
 
 .banner__picture {
-  background-image: url(../img/sedona-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 39px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: $tablet-width){
 .banner__picture {
-background-image: url(../img/sedona-tablet.svg);
 height: 78px;
 }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
 .banner__picture {
-background-image: url(../img/sedona-desktop.svg);
 height: 80px;
 }
 }
@@ -62,7 +58,7 @@ height: 80px;
   padding-bottom: 85px;
 }
 
-@media (min-width: 768px){
+@media (min-width: $tablet-width){
   .banner__slogan {
     padding-left: 153px;
     padding-right: 154px;
@@ -71,7 +67,7 @@ height: 80px;
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: $desktop-width){
   .banner__slogan {
     padding-left: 370px;
     padding-right: 370px;
