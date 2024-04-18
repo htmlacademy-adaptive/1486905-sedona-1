@@ -1,4 +1,6 @@
-@import "blocks/main-nav.scss";
+
+@import "variables.scss";
+@import "blocks/main-header.scss";
 @import "blocks/fonts.scss";
 @import "blocks/common.scss";
 @import "blocks/banner.scss";
@@ -13,3 +15,5 @@
 @import "blocks/attractions.scss";
 @import "blocks/gallery.scss";
 @import "blocks/video.scss";
+@import "blocks/site-list.scss";
+

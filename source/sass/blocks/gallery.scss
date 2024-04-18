@@ -11,6 +11,14 @@
   font-weight: 900;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+.gallery__header {
+  font-size: 30px;
+  line-height: 26px;
+}
 }
 
 .gallery__text {
@@ -19,6 +27,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
+  text-align: center;
 }
 
 .gallery__description {
@@ -30,10 +39,10 @@
 }
 
 .gallery__author {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
+font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+color: #333333;
 }
 
 .gallery__likes {
@@ -41,4 +50,126 @@
   line-height: 21px;
   font-weight: 800;
   color:#000000;
+}
+
+@media (min-width: $tablet-width){
+.gallery__image {
+background-color: #F2F2F2;
+
+}
+}
+
+@media (min-width: $desktop-width){
+.gallery__image {
+background-color: #FFFFFF;
+}
+}
+
+@media (min-width: $tablet-width){
+.gallery__container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+}
+
+@media (min-width: $desktop-width){
+.gallery__container {
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+}
+}
+
+.gallery__picture1 {
+width: 280px;
+height: 280px;
+background-repeat: no-repeat;
+}
+
+@media (min-width:$tablet-width){
+.gallery__picture1 {
+width: 648px;
+height: 400px;
+}
+}
+
+@media (min-width:$desktop-width) {
+.gallery__picture1 {
+width: 1200px;
+height: 400px;
+}
+}
+
+.gallery__picture2 {
+width: 280px;
+height: 280px;
+background-repeat: no-repeat;
+}
+
+@media (min-width:$tablet-width) {
+.gallery__picture2 {
+width: 324px;
+height: 267px;
+}
+}
+
+@media (min-width:$desktop-width) {
+.gallery__picture2 {
+width: 400px;
+height: 267px;
+}
+}
+
+.gallery__picture3 {
+width: 280px;
+height: 280px;
+background-repeat: no-repeat;
+}
+
+@media (min-width:$tablet-width) {
+.gallery__picture3 {
+width: 324px;
+height: 267px;
+}
+}
+
+@media (min-width:$desktop-width) {
+.gallery__picture3 {
+width: 400px;
+height: 267px;
+}}
+
+.gallery__picture4 {
+width: 280px;
+height: 280px;
+background-repeat: no-repeat;
+}
+
+@media (min-width:$tablet-width) {
+.gallery__picture4 {
+width: 324px;
+height: 267px;
+}
+}
+
+@media (min-width:$desktop-width) {
+.gallery__picture4 {
+width: 400px;
+height: 267px;
+}}
+
+@media (min-width: $tablet-width){
+.gallery__image--grid {
+grid-column-start: 1;
+grid-column-end: 3;
+}
+}
+
+@media (min-width: $desktop-width){
+.gallery__image--grid {
+grid-column-start: 1;
+grid-column-end: 4;
+}
 }

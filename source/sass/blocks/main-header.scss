@@ -1,0 +1,38 @@
+.main-header{
+background-color: #81B3D2;
+}
+
+@media (min-width: $tablet-width){
+.main-header
+{
+background-color: #FFFFFF;
+}}
+
+  .main-nav__wrapper {
+    position: relative;
+  }
+
+.main-nav__list {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 26px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width){
+  .main-nav__list
+  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  }}
+
+.main-header__logo {
+  display: block;
+  text-decoration: none;
+  height: 96px;
+}
