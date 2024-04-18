@@ -10,46 +10,42 @@
 </head>
 
 <body class="body">
-  <header class="main-header">
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <a class="site-list__link site-list__link--logo" href="index.html"> <img class="main-header__logo-image"
-            src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
-        </a>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--main">
-            <a class="site-list__link site-list__link--current" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--grid">
-            <a class="site-list__link" href="#">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--column">
-            <a class="site-list__link" href="#">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              HTML ACADEMY
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-  </header>
   <main class="main-container">
-
+    <header class="main-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <a class="site-list__link logo" href="index.html"> <img class="main-header__logo-image" src="img/logo.svg"
+              width="185" height="96" alt="Логотип Седона">
+          </a>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ</h1>
-
     <section class="banner">
       <div class="banner__wrapper">
         <header class="banner__header">
@@ -62,7 +58,6 @@
         </header>
       </div>
     </section>
-
     <section class="review">
       <div class="review__wrapper">
         <h2 class="review__header">
@@ -95,7 +90,6 @@
           <section class="contact">
             <div class="contact__wrapper">
               <h2 class="contact__header">Контактная информация:</h2>
-
               <label class="contact__phone-lable">Контактный телефон*:</label>
               <input class="contact__phone-input" type="text" id="contat__phone" name="contact__phone required"
                 placeholder="Введите телефон">
@@ -105,7 +99,6 @@
                   d="M23.6 27.8C25 30.6 27.4 32.9 30.2 34.4L32.4 32.2C32.7 31.9 33.1 31.8 33.4 32C34.5 32.4 35.7 32.6 37 32.6C37.6 32.6 38 33 38 33.6V37C38 37.6 37.6 38 37 38C27.6 38 20 30.4 20 21C20 20.4 20.4 20 21 20H24.5C25.1 20 25.5 20.4 25.5 21C25.5 22.2 25.7 23.4 26.1 24.6C26.2 24.9 26.1 25.3 25.9 25.6L23.6 27.8Z"
                   fill="#010101" />
               </svg>
-
               <label class="contact__mail-lable">Электронная почта*:</label>
               <input class="contact__mail-input" type="email" placeholder="Введите e-mail" name="contact__mail"
                 id="contact__name" required>
@@ -115,19 +108,15 @@
                   d="M29 31C28.7 31 28.5 30.9 28 30.7L21 27V34C21 34.5 21.5 35 22 35H36C36.5 35 37 34.5 37 34V27L30 30.7C29.5 30.9 29.3 31 29 31ZM36 23H22C21.5 23 21 23.5 21 24V24.8L29 29L37 24.8V24C37 23.5 36.5 23 36 23Z"
                   fill="black" />
               </svg>
-
             </div>
           </section>
         </div>
       </div>
     </form>
-
-
     <section class="impression">
       <div class="impression__wrapper">
         <h2 class="visually-hidden">общее впечатление</h2>
         <fieldset class="impression__group">
-
           <label class="impression__title">Ваше общее впечатление:</label>
           <ul class="impression__list">
             <li class="impression__item">
@@ -149,16 +138,13 @@
               </label>
             </li>
           </ul>
-
         </fieldset>
       </div>
     </section>
-
     <section class="attractions">
       <div class="attractions__wrapper">
         <h2 class="visually-hidden">впечатление о достопримечательностях</h2>
         <fieldset class="attractions__group">
-
           <label class="attractions__title">посещенные достопримечательности:</label>
           <ul class="attractions__list">
             <li class="attractions__item">
@@ -168,7 +154,6 @@
                 Мост Дьявола
               </label>
             </li>
-
             <li class="attractions__item">
               <label class="attractions__control">
                 <input class="attractions__checkbox" type="checkbox" name="attractions__group" value="Гора-Колокол"
@@ -176,7 +161,6 @@
                 Гора-Колокол
               </label>
             </li>
-
             <li class="attractions__item">
               <label class="attractions__control">
                 <input class="attractions__checkbox" type="checkbox" name="attractions__group" value="Красные скалы"
@@ -184,7 +168,6 @@
                 Красные скалы
               </label>
             </li>
-
             <li class="attractions__item">
               <label class="attractions__control">
                 <input class="attractions__checkbox" type="checkbox" name="attractions__group" value="Слайд-парк">
@@ -206,81 +189,71 @@
         <p class="review__footnote">* — обязательные поля</p>
       </div>
     </section>
-  </main>
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__hashtag">
-        <a class="main-footer__link" href="#">
-          #VISITSEDONA
-        </a>
-      </div>
-
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_78009_69)">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__hashtag">
+          <a class="main-footer__link" href="#">
+            #VISITSEDONA
+          </a>
+        </div>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_78009_69)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_78009_69">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link-telegram" href="https://t.me/htmlacademy">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.4393 4.62225L19.2705 19.566C19.0313 20.6205 18.408 20.883 17.5223 20.3865L12.6938 16.8285L10.3643 19.0695C10.1063 19.3275 9.891 19.5428 9.39375 19.5428L9.741 14.6258L18.6893 6.54C19.0785 6.1935 18.6045 6.00075 18.0848 6.348L7.02225 13.314L2.25976 11.823C1.22401 11.4998 1.20526 10.7873 2.47576 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4393 4.623V4.62225Z"
                     fill="white" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_78009_69">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-
-            </a>
-          </li>
-
-          <li class="social__item">
-            <a class="social__link social__link-telegram" href="https://t.me/htmlacademy">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link-yotube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">РАЗРАБОТАНО</b>
+          <a class="copyright__link" href="/https:/htmlacademy.ru/intensive/adaptive">
+            <svg width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_77987_31)">
                 <path
-                  d="M22.4393 4.62225L19.2705 19.566C19.0313 20.6205 18.408 20.883 17.5223 20.3865L12.6938 16.8285L10.3643 19.0695C10.1063 19.3275 9.891 19.5428 9.39375 19.5428L9.741 14.6258L18.6893 6.54C19.0785 6.1935 18.6045 6.00075 18.0848 6.348L7.02225 13.314L2.25976 11.823C1.22401 11.4998 1.20526 10.7873 2.47576 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4393 4.623V4.62225Z"
-                  fill="white" />
-              </svg>
-
-            </a>
-          </li>
-
-          <li class="social__item">
-            <a class="social__link social__link-yotube" href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
-                  fill="white" />
-              </svg>
-
-            </a>
-          </li>
-
-        </ul>
-
+                  d="M14.65 0.949951H14.55L1.05005 2.34995V27.05L14.55 35.0499L27.95 27.05V2.34995L14.65 0.949951ZM26.05 13.05L14.55 6.24995V6.14995H14.45L14.35 6.04995V6.14995L2.95005 13.05V4.04995L14.45 2.84995L26.05 4.04995V13.05ZM14.45 7.74995L25.95 14.45L21.45 17.05L14.35 12.85V14.25L20.25 17.75L19.35 18.25L14.35 15.25V16.65L18.15 18.95L17.35 19.45L14.35 17.65V19.05L16.25 20.15L14.45 21.25L3.05005 14.55L14.45 7.74995ZM2.95005 16.05L14.35 22.85V23.85L6.45005 19.15V20.55L14.45 25.35V26.45L6.45005 21.75V23.15L14.45 27.95L22.55 23.05V17.85L25.95 15.85V25.85L14.45 32.75L2.95005 25.95V16.05Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_77987_31">
+                  <rect width="28" height="35" fill="white" transform="translate(0.5 0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
       </div>
-
-      <div class="main-footer__copyright copyright">
-        <b class="copyright__text">РАЗРАБОТАНО</b>
-        <a class="copyright__link" href="/https:/htmlacademy.ru/intensive/adaptive">
-          <svg width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_77987_31)">
-              <path
-                d="M14.65 0.949951H14.55L1.05005 2.34995V27.05L14.55 35.0499L27.95 27.05V2.34995L14.65 0.949951ZM26.05 13.05L14.55 6.24995V6.14995H14.45L14.35 6.04995V6.14995L2.95005 13.05V4.04995L14.45 2.84995L26.05 4.04995V13.05ZM14.45 7.74995L25.95 14.45L21.45 17.05L14.35 12.85V14.25L20.25 17.75L19.35 18.25L14.35 15.25V16.65L18.15 18.95L17.35 19.45L14.35 17.65V19.05L16.25 20.15L14.45 21.25L3.05005 14.55L14.45 7.74995ZM2.95005 16.05L14.35 22.85V23.85L6.45005 19.15V20.55L14.45 25.35V26.45L6.45005 21.75V23.15L14.45 27.95L22.55 23.05V17.85L25.95 15.85V25.85L14.45 32.75L2.95005 25.95V16.05Z"
-                fill="black" />
-            </g>
-            <defs>
-              <clipPath id="clip0_77987_31">
-                <rect width="28" height="35" fill="white" transform="translate(0.5 0.5)" />
-              </clipPath>
-            </defs>
-          </svg>
-
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </main>
 </body>
 
 </html>
