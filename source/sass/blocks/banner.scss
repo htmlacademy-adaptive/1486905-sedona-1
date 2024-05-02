@@ -1,36 +1,22 @@
 .banner__wrapper{
   background-image: url(../img/back-mobile.jpg);
-  width: 320px;
+  width: 100%;
   height: 389px;
   background-repeat: no-repeat;
-  margin: 0 auto;
   padding-top: 52px;
-}
-
-@media (min-width: $tablet-width) {
-  .banner__wrapper{
-    background-image: url(../img/SEDONA-table.svg);
-    width: 457px;
-    height: 77px;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (min-width:$tablet-width){
-.banner__wrapper {
+  object-fit: cover;
+  margin: 0;
+@media (min-width:$tablet-width) {
 background-image: url(../img/tablet.jpg);
-width: 768px;
 height: 518px;
 background-repeat: no-repeat;
+width: 100%;
 }
-}
-
 @media (min-width: $desktop-width){
-.banner__wrapper {
 background-image: url(../img/desktop.jpg);
-width: 1200px;
 height: 518px;
 background-repeat: no-repeat;
+width: 100%;
 }
 }
 

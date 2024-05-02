@@ -92,6 +92,7 @@ background-repeat: no-repeat;
 .gallery__picture1 {
 width: 648px;
 height: 400px;
+object-fit: cover
 }
 }
 
@@ -106,6 +107,7 @@ height: 400px;
 width: 280px;
 height: 280px;
 background-repeat: no-repeat;
+object-fit: cover
 }
 
 @media (min-width:$tablet-width) {
@@ -126,6 +128,7 @@ height: 267px;
 width: 280px;
 height: 280px;
 background-repeat: no-repeat;
+object-fit: cover
 }
 
 @media (min-width:$tablet-width) {
@@ -145,6 +148,7 @@ height: 267px;
 width: 280px;
 height: 280px;
 background-repeat: no-repeat;
+object-fit: cover
 }
 
 @media (min-width:$tablet-width) {

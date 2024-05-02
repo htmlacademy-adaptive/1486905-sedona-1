@@ -1,0 +1,23 @@
+
+.social__list {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  display: block;
+  text-decoration: none;
+  background-color: #81b3d2;
+  width: 36px;
+  height: 36px;
+  padding: 12px;
+}
+
+.social__svg {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}

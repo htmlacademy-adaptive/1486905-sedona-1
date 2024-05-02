@@ -1,7 +1,16 @@
 .review__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 36px;
+
+  @media (min-width:$tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-left: 256px;
+    padding-right: 256px;
+  }
 }
 
 .review__header {
@@ -11,6 +20,10 @@
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+
+  @media (min-width:$tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .review__text {
@@ -39,6 +52,7 @@
   color: #0000004d;
   background-color: #f2f2f2;
   padding: 16px;
+  width: 85%;
 }
 
 .review__button {
