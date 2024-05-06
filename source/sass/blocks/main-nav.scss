@@ -26,27 +26,20 @@
 }
 
 .main-nav__wrapper {
-@media(min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
   position: relative;
-}
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  transform: translateX(50%);
-  right: 3%;
+  left: 315px;
   z-index: 2;
   display: block;
   cursor: pointer;
   border: none;
   background-color:#FFFFFF;
-  position: fixed;
-
-  &:hover,
-  &:active {
-  background-color: #FFFFFF;
-  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -82,14 +75,12 @@
   top: -2px;
   right: 85%;
   left: 0;
-  position: fixed;
+  position: absolute;
 
   &::before,
   &::after {
     content: "";
-    position: absolute;
     top: 19px;
-    left: 443px;
     width: 23px;
     height: 4px;
     background-color: #ffffff;
