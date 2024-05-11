@@ -66,9 +66,11 @@ padding: 0;
 .advantages__list {
 display: grid;
 grid-template-columns: repeat(3, 256px);
-grid-template-rows: repeat(4, 256px);
+grid-template-rows: repeat(4, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
+margin: 0;
+padding: 0;
 }
 }
 
@@ -82,21 +84,10 @@ grid-template-columns: repeat(3, 400px);
   background-color: #81b3d2;
   text-decoration: none;
   display: block;
-  padding-top: 33px;
-  padding-left: 18px;
-  padding-bottom: 40px;
-  @media (min-width:$tablet-width) {
-  padding-top: 52px;
-  padding-left: 33px;
-  padding-right: 33px;
-  padding-bottom: 31px;
-  }
+  height: 211px;
 
-  @media(min-width:$desktop-width) {
-  padding-top: 52px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 51px;
+  @media(min-width: $tablet-width) {
+    height: 256px;
   }
 }
 
@@ -145,17 +136,10 @@ grid-template-columns: repeat(3, 400px);
 .advantages__pross-item {
   display: block;
   text-decoration: none;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 23px;
-  padding-bottom: 25px;
+  height: 211px;
 
-  @media (min-width:$tablet-width) {
-    padding: 60px 33px;
-  }
-
-  @media (min-width:$desktop-width) {
-    padding: 69px 50px;
+  @media(min-width: $tablet-width) {
+    height: 256px;
   }
 }
 
