@@ -52,7 +52,11 @@
             Welcome to the gorgerous
           </h2>
           <div class="banner__slogan">
-            <img class="banner__picture" src="img/sedona-mobile.svg" width="229" height="39" alt="sedona">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/text-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/text-tablet.svg">
+              <img src="img/text-mobile.svg" width="282" height="214" alt="sedona">
+            </picture>
           </div>
         </header>
         <div class="banner__intro">

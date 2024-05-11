@@ -6,17 +6,32 @@
   padding-top: 52px;
   object-fit: cover;
   margin: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/back-mobile@2x.jpg);
+    background-size: 320px auto;
+  }
 @media (min-width:$tablet-width) {
 background-image: url(../img/tablet.jpg);
 height: 518px;
 background-repeat: no-repeat;
 width: 100%;
+
+@media (min-resolution: 2dppx) {
+  background-image: url(../img/tablet@2x.jpg);
+  background-size: 768px auto;
 }
+}
+
 @media (min-width: $desktop-width){
 background-image: url(../img/desktop.jpg);
 height: 518px;
 background-repeat: no-repeat;
 width: 100%;
+@media (min-resolution: 2dppx) {
+  background-image: url(../img/desktop@2x.jpg);
+  background-size: 1200px auto;
+}
 }
 }
 
