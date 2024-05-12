@@ -53,8 +53,8 @@
           </h2>
           <div class="banner__slogan">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/text-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/text-tablet.svg">
+              <source media="(min-width: 1200px)" srcset="img/text-desktop.svg" width="460" height="350">
+              <source media="(min-width: 768px)" srcset="img/text-tablet.svg" width="461" height="350">
               <img src="img/text-mobile.svg" width="282" height="214" alt="sedona">
             </picture>
           </div>
@@ -91,7 +91,12 @@
             </p>
           </li>
           <li class="advantages__causes advantages__causes--home">
-            <img class="advantages__home" src="img/home.jpg" width="320" height="260" alt="home">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/home-desktop.jpg 1x, img/home-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/home-tablet.jpg 1x, img/home-tablet@2x.jpg 2x">
+              <img class="advantages__home" src="img/home.jpg" width="320" height="260" alt="home"
+                srcset="img/home@2x.jpg 2x" alt="home">
+            </picture>
           </li>
           <li class="advantages__pross-item">
             <svg width="81" height="73" viewBox="0 0 81 73" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +161,12 @@
               местного производства!</p>
           </li>
           <li class="advantages__causes advantages__causes--devil">
-            <img class="advantages__devil" src="img/devil.jpg" width="320" height="360" alt="devil">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/devil-desktop.jpg 1x, img/devil-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/devil-tablet.jpg 1x, img/devil-tablet@2x.jpg 2x">
+              <img class="advantages__devil" src="img/devil.jpg" width="320" height="260" alt="devil"
+                srcset="img/devil@2x.jpg 2x" alt="devil">
+            </picture>
           </li>
           <li class="advantages__item advantages__item--column">
             <h3 class="advantages__title">Там есть Мост дьявола</h3>
