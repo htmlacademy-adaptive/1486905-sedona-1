@@ -8,23 +8,11 @@ body {
   line-height: 21px;
   color: #333333;
   min-width: 320px;
+  background-color: #E7E5E5;
 }
 
 html {
   height: 100%;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
-.main-container {
-  margin: 0 auto;
-}

@@ -33,6 +33,9 @@ justify-content: center;
 background-repeat: no-repeat;
 width: 280px;
 height: 177px;
+object-fit: cover;
+display: block;
+margin: 0 auto;
 }
 
 @media (min-width: $tablet-width){
