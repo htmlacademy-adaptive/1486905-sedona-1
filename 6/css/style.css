@@ -178,9 +178,11 @@ html {
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 256px);
-    grid-template-rows: repeat(4, 256px);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    margin: 0;
+    padding: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -192,24 +194,11 @@ html {
   background-color: #81b3d2;
   text-decoration: none;
   display: block;
-  padding-top: 33px;
-  padding-left: 18px;
-  padding-bottom: 40px;
+  height: 211px;
 }
 @media (min-width: 768px) {
   .advantages__item {
-    padding-top: 52px;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-bottom: 31px;
-  }
-}
-@media (min-width: 1200px) {
-  .advantages__item {
-    padding-top: 52px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 51px;
+    height: 256px;
   }
 }
 
@@ -258,19 +247,11 @@ html {
 .advantages__pross-item {
   display: block;
   text-decoration: none;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 23px;
-  padding-bottom: 25px;
+  height: 211px;
 }
 @media (min-width: 768px) {
   .advantages__pross-item {
-    padding: 60px 33px;
-  }
-}
-@media (min-width: 1200px) {
-  .advantages__pross-item {
-    padding: 69px 50px;
+    height: 256px;
   }
 }
 
@@ -885,6 +866,7 @@ html {
   mix-blend-mode: normal;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .site-list__item {
@@ -973,13 +955,12 @@ html {
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  left: 315px;
+  top: -3px;
+  right: 0;
   z-index: 2;
-  display: block;
   cursor: pointer;
   border: none;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 @media (min-width: 768px) {
   .main-nav__toggle {
@@ -1013,23 +994,23 @@ html {
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -2px;
-  right: 85%;
-  left: 0;
   position: absolute;
 }
 .main-nav--opened .main-nav__toggle::before, .main-nav--opened .main-nav__toggle::after {
   content: "";
-  top: 19px;
+  top: 29px;
+  right: 20px;
   width: 23px;
   height: 4px;
   background-color: #ffffff;
 }
 .main-nav--opened .main-nav__toggle::before {
+  position: absolute;
   transform: rotate(45deg);
   box-shadow: none;
 }
 .main-nav--opened .main-nav__toggle::after {
+  position: absolute;
   transform: rotate(-45deg);
 }
 .main-nav--opened .main-nav__toggle:active::before, .main-nav--opened .main-nav__toggle:active::after {
@@ -1043,11 +1024,6 @@ html {
 }
 .main-nav--opened .logo {
   display: none;
-}
-@media (min-width: 768px) {
-  .main-nav--opened .logo {
-    display: block;
-  }
 }
 
 .main-nav--opened .main-nav__list {
