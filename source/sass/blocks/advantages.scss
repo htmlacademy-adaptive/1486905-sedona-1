@@ -149,14 +149,6 @@ grid-template-columns: repeat(3, 400px);
   padding-right: 18px;
   padding-top: 23px;
   padding-bottom: 25px;
-
-  @media (min-width:$tablet-width) {
-    padding: 60px 33px;
-  }
-
-  @media (min-width:$desktop-width) {
-    padding: 69px 50px;
-  }
 }
 
 .advantages__devil {
