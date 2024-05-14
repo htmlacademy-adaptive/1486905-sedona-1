@@ -27,21 +27,22 @@ background: #fff;
 }
 }
 
-
 .site-list__item {
 display: block;
 text-decoration: none;
 padding-top: 17px;
 padding-bottom: 12px;
 min-width: 153px;
-background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, -0.8) 100%);
+background-color: #81B3D2;
 mix-blend-mode: normal;
 box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 text-transform: uppercase;
+text-align: center;
 
 @media (min-width: $tablet-width) {
   box-shadow: none;
   color: #3333;
+  background-color: #FFFFFF;
 }
 }
 
@@ -92,12 +93,4 @@ text-transform: uppercase;
   color: #766357;
 }
 }
-}
-
-.logo {
-display: block;
-position: absolute;
-top: 0;
-left: 50%;
-transform: translateX(-50%);
 }
