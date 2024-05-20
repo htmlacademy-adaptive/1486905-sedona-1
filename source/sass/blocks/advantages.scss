@@ -84,11 +84,6 @@ grid-template-columns: repeat(3, 400px);
   background-color: #81b3d2;
   text-decoration: none;
   display: block;
-  height: auto;
-
-  @media(min-width: $tablet-width) {
-    height: auto;
-  }
 }
 
 .advantages__item--white {
