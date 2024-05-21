@@ -212,12 +212,6 @@ html {
   background-color: #81b3d2;
   text-decoration: none;
   display: block;
-  height: 211px;
-}
-@media (min-width: 768px) {
-  .advantages__item {
-    height: 256px;
-  }
 }
 
 .advantages__item--white {
@@ -269,52 +263,10 @@ html {
 }
 @media (min-width: 768px) {
   .advantages__pross-item {
-    height: 256px;
+    height: auto;
   }
 }
 
-.advantages__devil {
-  width: 320px;
-  height: 260px;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-
-@media (min-width: 768px) {
-  .advantages__devil {
-    width: 512px;
-    height: 256px;
-    background-repeat: no-repeat;
-  }
-}
-@media (min-width: 1200px) {
-  .advantages__devil {
-    width: 800px;
-    height: 256px;
-    background-repeat: no-repeat;
-  }
-}
-.advantages__home {
-  background-repeat: no-repeat;
-  width: 320px;
-  height: 260px;
-  object-fit: cover;
-}
-
-@media (min-width: 768px) {
-  .advantages__home {
-    background-repeat: no-repeat;
-    width: 512px;
-    height: 256px;
-  }
-}
-@media (min-width: 1200px) {
-  .advantages__home {
-    width: 800px;
-    height: 256px;
-    background-repeat: no-repeat;
-  }
-}
 .application__wrapper {
   padding-top: 38px;
   padding-left: 29px;
@@ -703,13 +655,6 @@ html {
     gap: 64px;
   }
 }
-.gallery__wrapper {
-  padding-top: 37px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 25px;
-}
-
 .gallery__header {
   font-size: 18px;
   line-height: 26px;
@@ -1105,6 +1050,7 @@ html {
 .main-container {
   margin: 0 auto;
   background-color: #ffffff;
+  max-width: 1200px;
 }
 
 .logo {
