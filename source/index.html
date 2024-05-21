@@ -5,11 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/svg" href="favicon.ico.svg">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Седона</title>
 </head>
 
 <body class="body">
-  <main class="main-container">
+  <div class="main-container">
     <header class="main-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -52,7 +55,11 @@
             Welcome to the gorgerous
           </h2>
           <div class="banner__slogan">
-            <img class="banner__picture" src="img/sedona-mobile.svg" width="229" height="39" alt="sedona">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/text-desktop.svg" width="460" height="350">
+              <source media="(min-width: 768px)" srcset="img/text-tablet.svg" width="461" height="350">
+              <img src="img/text-mobile.svg" width="282" height="214" alt="sedona">
+            </picture>
           </div>
         </header>
         <div class="banner__intro">
@@ -87,7 +94,11 @@
             </p>
           </li>
           <li class="advantages__causes advantages__causes--home">
-            <img class="advantages__home" src="img/home.jpg" width="320" height="260" alt="home">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/home-desktop.jpg 1x, img/home-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/home-tablet.jpg 1x, img/home-tablet@2x.jpg 2x">
+              <img class="advantages__home" src="img/home.jpg" alt="home" srcset="img/home@2x.jpg 2x" alt="home">
+            </picture>
           </li>
           <li class="advantages__pross-item">
             <svg width="81" height="73" viewBox="0 0 81 73" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -152,7 +163,11 @@
               местного производства!</p>
           </li>
           <li class="advantages__causes advantages__causes--devil">
-            <img class="advantages__devil" src="img/devil.jpg" width="320" height="360" alt="devil">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/devil-desktop.jpg 1x, img/devil-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/devil-tablet.jpg 1x, img/devil-tablet@2x.jpg 2x">
+              <img class="advantages__devil" src="img/devil.jpg" alt="devil" srcset="img/devil@2x.jpg 2x" alt="devil">
+            </picture>
           </li>
           <li class="advantages__item advantages__item--column">
             <h3 class="advantages__title">Там есть Мост дьявола</h3>
@@ -275,7 +290,7 @@
         </div>
       </div>
     </footer>
-  </main>
+  </div>
   <script src="js/script.js"></script>
 </body>
 
