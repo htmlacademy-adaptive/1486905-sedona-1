@@ -76,3 +76,27 @@ height: 80px;
     padding-bottom: 90px;
   }
 }
+
+.banner__svg {
+@media (min-width: $tablet-width){
+  width: 461px;
+  height: 350px;
+}
+
+@media (min-width: $desktop-width){
+  width: 460px;
+  height: 350px;
+}
+}
+
+.banner__svg--text {
+  @media (min-width: $tablet-width){
+    width: 460px;
+    height: 77px;
+  }
+
+  @media (min-width: $desktop-width){
+    width: 460px;
+    height: 80px;
+  }
+}

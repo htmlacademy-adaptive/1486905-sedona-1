@@ -18,6 +18,18 @@
   }
 }
 
+.advantages__svg {
+  @media(min-width: $tablet-width) {
+    width: 77px;
+    height: 72px;
+  }
+  @media (min-width:$desktop-width) {
+    width: 80px;
+    height: 72px;
+  }
+}
+
+
 .advantages__header {
 font-size: 18px;
 line-height: 26px;
