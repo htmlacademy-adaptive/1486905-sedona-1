@@ -72,8 +72,7 @@ height: 80px;
   .banner__slogan {
     padding-left: 370px;
     padding-right: 370px;
-    padding-top: 78px;
-    padding-bottom: 90px;
+    padding-top: 26px;
   }
 }
 
@@ -91,12 +90,12 @@ height: 80px;
 
 .banner__svg--text {
   @media (min-width: $tablet-width){
-    width: 460px;
-    height: 77px;
+    width: 461px;
+    height: 350px;
   }
 
   @media (min-width: $desktop-width){
     width: 460px;
-    height: 80px;
+    height: 350px;
   }
 }

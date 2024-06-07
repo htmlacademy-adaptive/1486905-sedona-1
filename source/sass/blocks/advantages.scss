@@ -13,7 +13,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages__wrapper {
-    padding-top: 59px;
+    padding-top: 9px;
     padding-bottom: 44px;
   }
 }
@@ -29,7 +29,6 @@
   }
 }
 
-
 .advantages__header {
 font-size: 18px;
 line-height: 26px;
@@ -37,6 +36,12 @@ font-weight: 900;
 text-transform: uppercase;
 text-align: center;
 margin: 0;
+
+@media (min-width: $tablet-width) {
+  font-size: 21px;
+  width: 520px;
+  padding-left: 339px;
+}
 }
 
 .advantages__causes {
@@ -46,6 +51,9 @@ font-weight: 400;
 text-transform: uppercase;
 text-align: center;
 display: block;
+margin: 0;
+padding-top: 28px;
+padding-bottom: 44px;
 }
 
 @media(min-width:$tablet-width) {
@@ -107,6 +115,7 @@ grid-template-columns: repeat(3, 400px);
   line-height: 26px;
   font-weight: 900;
   text-transform: uppercase;
+  color: #ffff;
 }
 
 .advantages__title--black{
@@ -118,6 +127,7 @@ grid-template-columns: repeat(3, 400px);
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  color: #ffff;
 }
 
 .advantages__description--black{

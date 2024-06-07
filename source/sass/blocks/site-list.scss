@@ -40,6 +40,8 @@ text-transform: uppercase;
 text-align: center;
 
 @media (min-width: $tablet-width) {
+  font-size: 14px;
+  line-height: 21px;
   box-shadow: none;
   color: #3333;
   background-color: #FFFFFF;
