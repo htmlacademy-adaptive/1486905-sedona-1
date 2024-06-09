@@ -129,8 +129,7 @@ html {
   .banner__slogan {
     padding-left: 370px;
     padding-right: 370px;
-    padding-top: 78px;
-    padding-bottom: 90px;
+    padding-top: 26px;
   }
 }
 @media (min-width: 768px) {
@@ -148,14 +147,14 @@ html {
 
 @media (min-width: 768px) {
   .banner__svg--text {
-    width: 460px;
-    height: 77px;
+    width: 461px;
+    height: 350px;
   }
 }
 @media (min-width: 1200px) {
   .banner__svg--text {
     width: 460px;
-    height: 80px;
+    height: 350px;
   }
 }
 
@@ -173,7 +172,7 @@ html {
 }
 @media (min-width: 1200px) {
   .advantages__wrapper {
-    padding-top: 59px;
+    padding-top: 9px;
     padding-bottom: 44px;
   }
 }
@@ -198,6 +197,13 @@ html {
   text-align: center;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .advantages__header {
+    font-size: 21px;
+    width: 520px;
+    padding-left: 339px;
+  }
+}
 
 .advantages__causes {
   font-size: 14px;
@@ -206,6 +212,9 @@ html {
   text-transform: uppercase;
   text-align: center;
   display: block;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 44px;
 }
 
 @media (min-width: 768px) {
@@ -262,6 +271,7 @@ html {
   line-height: 26px;
   font-weight: 900;
   text-transform: uppercase;
+  color: #ffff;
 }
 
 .advantages__title--black {
@@ -273,6 +283,7 @@ html {
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  color: #ffff;
 }
 
 .advantages__description--black {
@@ -872,6 +883,8 @@ html {
 }
 @media (min-width: 768px) {
   .site-list__item {
+    font-size: 14px;
+    line-height: 21px;
     box-shadow: none;
     color: #3333;
     background-color: #FFFFFF;
