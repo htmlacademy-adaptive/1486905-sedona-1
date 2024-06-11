@@ -81,21 +81,11 @@ height: 80px;
   width: 461px;
   height: 350px;
 }
-
-@media (min-width: $desktop-width){
-  width: 460px;
-  height: 350px;
-}
 }
 
-.banner__svg--text {
+.banner__text {
   @media (min-width: $tablet-width){
     width: 461px;
-    height: 350px;
-  }
-
-  @media (min-width: $desktop-width){
-    width: 460px;
     height: 350px;
   }
 }
