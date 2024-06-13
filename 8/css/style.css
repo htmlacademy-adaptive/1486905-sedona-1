@@ -138,22 +138,10 @@ html {
     height: 350px;
   }
 }
-@media (min-width: 1200px) {
-  .banner__svg {
-    width: 460px;
-    height: 350px;
-  }
-}
 
 @media (min-width: 768px) {
-  .banner__svg--text {
+  .banner__text {
     width: 461px;
-    height: 350px;
-  }
-}
-@media (min-width: 1200px) {
-  .banner__svg--text {
-    width: 460px;
     height: 350px;
   }
 }
