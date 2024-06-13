@@ -72,7 +72,20 @@ height: 80px;
   .banner__slogan {
     padding-left: 370px;
     padding-right: 370px;
-    padding-top: 78px;
-    padding-bottom: 90px;
+    padding-top: 26px;
+  }
+}
+
+.banner__svg {
+@media (min-width: $tablet-width){
+  width: 461px;
+  height: 350px;
+}
+}
+
+.banner__text {
+  @media (min-width: $tablet-width){
+    width: 461px;
+    height: 350px;
   }
 }
