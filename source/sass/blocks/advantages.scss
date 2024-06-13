@@ -26,6 +26,8 @@
   @media (min-width:$desktop-width) {
     width: 80px;
     height: 72px;
+    padding-left: 157px;
+    padding-top: 21px;
   }
 }
 
@@ -41,6 +43,7 @@ margin: 0;
   font-size: 21px;
   width: 520px;
   padding-left: 339px;
+  padding-bottom: 28px;
 }
 }
 
@@ -52,7 +55,6 @@ text-transform: uppercase;
 text-align: center;
 display: block;
 margin: 0;
-padding-top: 28px;
 padding-bottom: 44px;
 }
 
@@ -104,6 +106,10 @@ grid-template-columns: repeat(3, 400px);
   background-color: #81b3d2;
   text-decoration: none;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
 }
 
 .advantages__item--white {
@@ -116,6 +122,14 @@ grid-template-columns: repeat(3, 400px);
   font-weight: 900;
   text-transform: uppercase;
   color: #ffff;
+
+  @media (min-width:$tablet-width) {
+    font-size: 21px;
+    text-align: center;
+    width: 190px;
+    padding-top: 33px;
+    padding-left: 105px;
+  }
 }
 
 .advantages__title--black{
@@ -128,6 +142,13 @@ grid-template-columns: repeat(3, 400px);
   font-weight: 400;
   text-transform: uppercase;
   color: #ffff;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding-left: 105px;
+    width: 190px;
+    text-align: center;
+  }
 }
 
 .advantages__description--black{
@@ -140,6 +161,13 @@ grid-template-columns: repeat(3, 400px);
   line-height: 26px;
   font-weight: 900;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+  }
 }
 
 .advantages__pross-description {
@@ -148,6 +176,14 @@ grid-template-columns: repeat(3, 400px);
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-left: 50px;
+    margin: 0;
+    width: 300px;
+    padding-top: 23px;
+  }
 }
 
 .advantages__pross-item {

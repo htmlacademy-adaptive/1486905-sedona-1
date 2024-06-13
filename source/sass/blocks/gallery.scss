@@ -88,3 +88,17 @@ grid-column-start: 1;
 grid-column-end: 4;
 }
 }
+
+.gallery__box {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.gallery__box_for_likes {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+  }
+}
