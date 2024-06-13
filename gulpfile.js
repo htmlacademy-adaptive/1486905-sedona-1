@@ -4,6 +4,7 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -43,3 +44,10 @@ const watcher = () => {
 export default gulp.series(
   styles, server, watcher
 );
+
+// HTML
+export const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest('source'));
+}
