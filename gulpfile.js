@@ -20,7 +20,8 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
@@ -65,18 +66,18 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  gulp.src (['source/img/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-  return gulp.src('source/img/*svg')
+  return gulp.src ('source/img/*svg')
 .pipe(svgo())
 .pipe(svgstore({
   inlineSvg:true
 }))
-.pipe(rename('sprite.svg'))
-.pipe(gulp.dest('build/img'));
+.pipe( rename('sprite.svg'))
+.pipe( gulp.dest('build/img'));
 }
 
 // Copy
@@ -113,10 +114,6 @@ const watcher = () => {
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
-
-/*export default gulp.series(
-  html, styles, server, watcher
-);*/
 
 // Server
 
