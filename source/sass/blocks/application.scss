@@ -1,8 +1,18 @@
 .application__wrapper {
-  padding-top: 38px;
-  padding-left: 29px;
+  padding-top: 41px;
   padding-bottom: 49px;
   margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 55px;
+    max-width: 458px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .application__title {
   font-size: 21px;
@@ -10,13 +20,14 @@
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  padding-right: 29px;
+  margin-top: 0;
 }
 
 @media (min-width: $tablet-width) {
   .application__title {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 28px;
   }
 }
 
@@ -33,10 +44,22 @@
   text-transform: uppercase;
   text-align: center;
   padding-left: 0px;
-  padding-right: 28px;
   padding-top: 2px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    padding-top: 3px;
+  }
 }
 
+.application__break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
 .application__find {
   color: #ffffff;
   background-color: #81b3d2;

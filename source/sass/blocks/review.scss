@@ -2,12 +2,12 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 256px;
     padding-right: 256px;
   }
@@ -16,12 +16,12 @@
 .review__header {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
   }
 }
@@ -45,7 +45,7 @@
 }
 
 .review__textarea {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
@@ -60,7 +60,7 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 21px;
   line-height: 26px;
   font-weight: 800;

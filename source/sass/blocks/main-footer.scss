@@ -10,16 +10,21 @@
   line-height: 26px;
   font-weight: 800;
   padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .main-footer__wrapper {
-  padding: 33px 82px;
+  padding: 35px 82px;
   gap: 30px;
   display: flex;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 113px;
     padding: 36px 60px;
     flex-direction: row;
@@ -35,4 +40,9 @@
   gap: 12px;
   padding-left: 14px;
   padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    align-items: center;
+  }
 }

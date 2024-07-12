@@ -1,29 +1,9 @@
-.advantages__wrapper {
-  padding-top: 37px;
-  padding-bottom: 32px;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__wrapper {
-    padding-top: 47px;
-    padding-bottom: 55px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__wrapper {
-    padding-top: 9px;
-    padding-bottom: 44px;
-  }
-}
-
 .advantages__svg {
   margin-top: 22px;
   @media (min-width: $tablet-width) {
     width: 77px;
     height: 72px;
-    margin-left: 144px;
+    margin-top: 0;
   }
   @media (min-width: $desktop-width) {
     width: 80px;
@@ -31,10 +11,16 @@
   }
 }
 
+.advantages__icon {
+  @media (min-width: $tablet-width) {
+    min-height: 79px;
+  }
+}
+
 .advantages__header {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
@@ -46,7 +32,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     width: 520px;
-    margin: 0 auto 35px;
+    margin: 0 auto 29px;
   }
 }
 
@@ -58,6 +44,25 @@
   }
 }
 
+.advantages__picture--reverse .advantages__item {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+}
+
+.advantages__picture--reverse .advantages__span {
+  margin-top: -3px;
+}
+
+.advantages__picture--reverse {
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
 .advantages__causes {
   font-size: 14px;
   line-height: 21px;
@@ -66,7 +71,11 @@
   text-align: center;
   display: block;
   margin: 0;
-  padding-bottom: 44px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
 }
 
 .advantages__image {
@@ -77,7 +86,7 @@
 .advantages__list {
   margin: 0;
   padding: 0;
-  padding-bottom: 41px;
+  padding-bottom: 44px;
 }
 
 @media (min-width: $tablet-width) {
@@ -89,16 +98,30 @@
   }
 }
 
+.advantages__list--grey {
+  background-color: #eee;
+  color: #000000;
+  padding: 0;
+}
+
+.advantages__list--grey .advantages__title,
+.advantages__list--grey .advantages__description {
+  color: #000000;
+}
+
 .advantages__item {
   text-decoration: none;
   display: block;
-  padding-top: 23px;
+  padding-top: 31px;
   text-align: center;
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     width: 256px;
     flex-shrink: 0;
+    padding-top: 53px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,50 +129,70 @@
   }
 }
 
-.advantages__item--white:not(:last-child)::after {
+.advantages__item-elem:not(:last-child)::after {
   content: "";
   display: block;
   border-bottom: 1px solid #d6d6d6;
   width: 286px;
   margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
+    display: none;
   }
 }
 
-.advantages__item--white {
-  background-color: #eeeeee;
+.advantages__item-elem {
   text-decoration: none;
   display: block;
   text-align: center;
-  padding-bottom: 13px;
-  padding-top: 11px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  position: relative;
+  padding-left: 11px;
+  padding-right: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 31px;
+  }
+}
+
+.advantages__break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .advantages__title {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffff;
   text-align: center;
-  margin-bottom: 1px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     width: 190px;
-    margin: 0 auto;
+    margin: 0 auto 13px;
   }
 }
 
-.advantages__title--black {
-  color: #000000;
-
+.advantages__title span {
   @media (min-width: $tablet-width) {
-    padding-left: 24px;
-    padding-right: 24px;
+    display: block;
   }
+}
+
+.advantages__item-elem .advantages__title {
+  margin-top: 0;
+  margin-bottom: 13px;
 }
 
 .advantages__description {
@@ -164,10 +207,19 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     text-align: center;
-    padding-left: 47px;
-    padding-right: 48px;
-    padding-top: 18px;
+    padding: 0;
   }
+}
+
+.advantages__description--ident {
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.advantages__item-elem .advantages__description {
+  margin-bottom: 0;
 }
 
 .advantages__description--black {
@@ -178,7 +230,7 @@
   color: #000000;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   margin-top: 31px;
 
@@ -186,7 +238,7 @@
     font-size: 21px;
     text-align: center;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 19px;
     padding-bottom: 25px;
   }
 }
@@ -203,8 +255,7 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     margin: 0;
-    padding-right: 53px;
-    padding-left: 54px;
+    padding: 0;
   }
 }
 
@@ -216,26 +267,56 @@
   padding-right: 18px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 64px;
+    padding-bottom: 58px;
+    padding-top: 60px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 }
 
 .advantages__subtitle {
   padding-left: 18px;
   padding-right: 18px;
+  padding-top: 37px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 49px;
+  }
+}
+
+.advantages__subtitle::before {
+  content: "";
+  width: 100%;
+  height: 37px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-image: url("../img/intro-line.svg");
+  bottom: -17px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .advantages__span {
   text-align: center;
   display: block;
-  margin-bottom: -3px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .advantages__wrap {
   display: flex;
   gap: 7px;
 
-  @media (min-width: $desktop-width) {
-    display: block;
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
   }
 }

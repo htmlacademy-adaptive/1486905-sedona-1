@@ -1,27 +1,27 @@
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .communication {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
 }
 
 .contact__wrapper {
-padding-top: 24px;
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 34px;
-display: grid;
-grid-template-columns: 1fr 58px;
-grid-template-rows: repeat(2, 1fr);
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+  display: grid;
+  grid-template-columns: 1fr 58px;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .contact__header {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   grid-column-start: 1;
@@ -49,7 +49,7 @@ grid-template-rows: repeat(2, 1fr);
 }
 
 .contact__phone-input {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
@@ -63,7 +63,7 @@ grid-template-rows: repeat(2, 1fr);
 }
 
 .contact__mail-input {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
