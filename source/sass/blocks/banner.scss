@@ -6,6 +6,7 @@
   padding-top: 52px;
   background-size: cover;
   margin: 0;
+  clip-path: polygon(0% 0%, 100% 0, 100% 93%, 49% 100%, 49% 100%, 0 93%, 0 0);
 
   @media (min-resolution: 2dppx) {
     background-image: url(../img/back-mobile@2x.jpg);
@@ -15,6 +16,18 @@
     height: 518px;
     background-repeat: no-repeat;
     width: 100%;
+    clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 89%,
+      79% 94%,
+      79% 90%,
+      50% 100%,
+      21% 89%,
+      21% 93%,
+      0% 89%,
+      0 0
+    );
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/tablet@2x.jpg);
