@@ -46,6 +46,10 @@
     color: #3333;
     background-color: #ffffff;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
+  }
 }
 
 .site-list__item:hover {
