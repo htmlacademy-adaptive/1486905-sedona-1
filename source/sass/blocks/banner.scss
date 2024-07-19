@@ -33,6 +33,18 @@
   }
 }
 
+.banner__wrapper--catalog {
+  height: 158px;
+
+  @media (min-width: $tablet-width) {
+    height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 301px;
+  }
+}
+
 .banner__wrapper::after {
   content: "";
   position: absolute;
@@ -94,6 +106,14 @@
   }
 }
 
+.banner__slogan--catalog {
+  padding: 0 19px 85px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .banner__svg {
   @media (min-width: $tablet-width) {
     width: 461px;
@@ -105,5 +125,12 @@
   @media (min-width: $tablet-width) {
     width: 461px;
     height: 350px;
+    padding-bottom: 186px;
+    padding-left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 172px;
+    padding-left: 0px;
   }
 }

@@ -35,6 +35,16 @@
   }
 }
 
+.main-footer__wrapper--catalog {
+  @media (min-width: $tablet-width) {
+    padding: 77px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 120px;
+  }
+}
+
 .main-footer__copyright {
   display: flex;
   gap: 12px;
@@ -44,5 +54,13 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     align-items: center;
+  }
+}
+
+.main-footer__svg {
+  margin-top: -8px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
   }
 }
