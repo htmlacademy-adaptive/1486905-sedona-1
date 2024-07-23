@@ -45,8 +45,7 @@
 }
 
 .advantages__picture--reverse .advantages__item {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding: 0 50px;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
@@ -209,8 +208,9 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #ffff;
-  padding-left: 26px;
-  padding-right: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -234,6 +234,10 @@
 
 .advantages__item-elem .advantages__description {
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 .advantages__description--black {
