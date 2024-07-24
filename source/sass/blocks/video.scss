@@ -1,6 +1,7 @@
 .video__wrapper {
   padding-top: 17px;
   margin: 0 auto;
+  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     padding-top: 44px;
@@ -20,6 +21,7 @@
   text-align: center;
   padding: 0;
   padding-bottom: 11px;
+  margin-top: 0;
 }
 
 @media (min-width: $tablet-width) {

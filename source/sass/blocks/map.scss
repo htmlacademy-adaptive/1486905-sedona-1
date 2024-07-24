@@ -1,6 +1,10 @@
 .map {
-  margin-bottom: 8px;
+  padding-bottom: 8px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .map__frame {
