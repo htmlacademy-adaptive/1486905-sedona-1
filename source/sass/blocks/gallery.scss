@@ -4,18 +4,6 @@
   }
 }
 
-.gallery__wrapper {
-  padding-top: 16px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 74px;
-  }
-}
-
 .gallery__header {
   font-size: 18px;
   line-height: 26px;
@@ -23,7 +11,8 @@
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 22px;
+  margin-top: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -196,4 +185,8 @@
     padding-top: 6px;
     padding-left: 20px;
   }
+}
+
+.gallery__wrapper {
+  padding-top: 38px;
 }

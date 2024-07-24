@@ -35,6 +35,7 @@
 
 .banner__wrapper--catalog {
   height: 158px;
+  background-position: bottom;
 
   @media (min-width: $tablet-width) {
     height: 290px;
@@ -107,7 +108,7 @@
 }
 
 .banner__slogan--catalog {
-  padding: 0 19px 85px;
+  padding: 0 19px 0px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
