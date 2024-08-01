@@ -118,13 +118,9 @@
 }
 
 .gallery__image--indentation {
-  padding-top: 36px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 16px;
-  }
-
-  @media (min-width: $desktop-width) {
     padding-top: 0px;
   }
 }
@@ -204,4 +200,8 @@
 
 .gallery__wrapper {
   padding-top: 38px;
+}
+
+.gallery__picture {
+  display: block;
 }
