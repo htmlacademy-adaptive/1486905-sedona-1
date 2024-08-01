@@ -93,7 +93,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding-top: 21px;
+    padding-top: 20px;
     padding-right: 5px;
     background-color: inherit;
   }
@@ -106,6 +106,7 @@
   margin: 0 auto;
   padding: 25px 20px 24px;
   border-bottom: 1px solid #e5e5e5;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -164,24 +165,20 @@
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
+    padding-top: 7px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 1px;
     background-color: rgba(0, 0, 0, 0.3);
-    margin-top: -80px;
-    margin-bottom: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 }
 
-.gallery__box--desktop {
-  @media (min-width: $desktop-width) {
-    margin-top: -83px;
-    margin-left: 5px;
-  }
-}
-
-.gallery__box_for_likes {
+.gallery__box-for-likes {
   display: flex;
   gap: 14px;
   align-items: baseline;
@@ -191,7 +188,7 @@
   }
 }
 
-.gallery__box_for_text {
+.gallery__box-for-text {
   @media (min-width: $tablet-width) {
     padding-top: 6px;
     padding-left: 20px;
