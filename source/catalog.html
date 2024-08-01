@@ -69,7 +69,7 @@
             </div>
           </div>
         </div>
-        <div class="gallery__image">
+        <div class="gallery__image gallery__image--indentation">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="img/photo-2-desktop.webp, img/photo-2-desktop@2x.webp 2x">
@@ -80,7 +80,7 @@
             <source type="image/webp" srcset="img/photo-2-mobile.webp, img/photo-2-mobile@2x.webp 2x"><img
               class="gallery__picture2" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="photo2">
           </picture>
-          <div class="gallery__box">
+          <div class="gallery__box gallery__box--desktop">
             <div class="gallery__box_for_text">
               <p class="gallery__description">местная растительность</p>
               <p class="gallery__author">Автор фото: Сергей</p>
@@ -94,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="gallery__image">
+        <div class="gallery__image gallery__image--indentation">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="img/photo-3-desktop.webp, img/photo-3-desktop@2x.webp 2x">
@@ -105,7 +105,7 @@
             <source type="image/webp" srcset="img/photo-3-mobile.webp, img/photo-3-mobile@2x.webp 2x"><img
               class="gallery__picture3" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="photo3">
           </picture>
-          <div class="gallery__box">
+          <div class="gallery__box gallery__box--desktop">
             <div class="gallery__box_for_text">
               <p class="gallery__description">дорога на Север</p>
               <p class="gallery__author">Автор фото: Петр</p>
@@ -120,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="gallery__image ">
+        <div class="gallery__image gallery__image--indentation">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="img/photo-4-desktop.webp, img/photo-4-desktop@2x.webp 2x">
@@ -131,7 +131,7 @@
             <source type="image/webp" srcset="img/photo-4-mobile.webp, img/photo-4-mobile@2x.webp 2x"><img
               class="gallery__picture4" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="photo4">
           </picture>
-          <div class="gallery__box">
+          <div class="gallery__box gallery__box--desktop">
             <div class="gallery__box_for_text">
               <p class="gallery__description">мост дьявола</p>
               <p class="gallery__author">Автор фото: Антон</p>
@@ -151,11 +151,16 @@
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x"><img
-            class="video__picture" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="video">
-        </picture>
+        <div class="video__picture-wrap">
+          <button class="video__play" type="button"><svg width="48" height="54">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg></button>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x"><img
+              class="video__picture" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="video">
+          </picture>
+        </div>
       </div>
     </section>
     <footer class="main-footer">

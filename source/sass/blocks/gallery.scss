@@ -1,6 +1,6 @@
 .gallery {
   @media (min-width: $desktop-width) {
-    margin-bottom: -74px;
+    margin-bottom: -73px;
   }
 }
 
@@ -99,33 +99,45 @@
   }
 
   @media (min-width: $desktop-width) {
-    stroke: #ffffff;
+    fill: #ffffff;
   }
 }
 .gallery__image {
   margin: 0 auto;
   padding: 25px 20px 24px;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .gallery__image--indentation {
   padding-top: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 12px;
+    padding-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0px;
   }
 }
 
 .gallery__container {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 324px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding-top: 71px;
+    padding-top: 49px;
     padding-left: 60px;
-    padding-right: 60px;
-    max-width: 648px;
+    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -155,11 +167,21 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    background-color: #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -80px;
     padding-left: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -80px;
+    margin-bottom: 16px;
+  }
+}
+
+.gallery__box--desktop {
+  @media (min-width: $desktop-width) {
+    margin-top: -83px;
+    margin-left: 5px;
   }
 }
 
