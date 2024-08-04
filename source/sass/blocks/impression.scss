@@ -28,6 +28,7 @@
   padding-left: 62px;
   padding-top: 11.5px;
   padding-bottom: 11.5px;
+  display: block;
 }
 
 .impression__text::before {
@@ -43,13 +44,13 @@
 
 .impression__text::after {
   content: "";
-  width: 21px;
-  height: 21px;
+  width: 16px;
+  height: 16px;
   border-radius: 50px;
   background-color: #333333;
   position: absolute;
-  left: 17px;
-  top: 17px;
+  left: 15px;
+  top: 14px;
   opacity: 0;
 }
 
@@ -61,6 +62,8 @@
 .impression__list {
   margin: 0;
   padding: 0;
+  display: grid;
+  gap: 12px;
 }
 
 @media (min-width: $tablet-width) {
