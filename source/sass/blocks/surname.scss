@@ -1,8 +1,9 @@
 .surname__wrapper {
-  padding-top: 24px;
+  padding-top: 10px;
   padding-left: 20px;
-  padding-right: 24px;
-  padding-bottom: 0px;
+  padding-right: 20px;
+  padding-bottom: 39px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .surname__title {
@@ -15,7 +16,7 @@
   padding-bottom: 4px;
 }
 
-.surname__name {
+.surname__text {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -37,14 +38,7 @@
   width: 280px;
 }
 
-.surname__surmname {
-  padding-top: 2px;
-  padding-left: 16px;
-  margin-bottom: 0px;
-}
-
-.surname__patronymic {
-  padding-top: 2px;
-  padding-left: 16px;
-  margin-bottom: 0px;
+.surname__field:not(:last-child) {
+  margin-bottom: 16px;
+  display: block;
 }

@@ -48,40 +48,48 @@
     </section>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <div class="communication">
-        <div>
-          <section class="surname">
-            <div class="surname__wrapper">
-              <h2 class="surname__title">Представьтесь:</h2>
-              <p class="surname__name">ИМЯ*:</p><input class="surname__input" type="text" id="name" placeholder="Петр"
-                required>
-              <p class="surname__surmname">ФАМИЛИЯ*:</p><input class="surname__input" type="text" id="surname"
-                placeholder="Пустота" required>
-              <p class="surname__patronymic">ОТЧЕСТВО:</p><input class="surname__input" type="text" id="patronymic"
-                placeholder="Викторович">
-            </div>
-          </section>
-        </div>
-        <div>
-          <section class="contact">
-            <div class="contact__wrapper">
-              <h2 class="contact__header">Контактная информация:</h2><label class="contact__phone-lable">Контактный
-                телефон*:</label> <input class="contact__phone-input" type="text" id="contat__phone"
-                name="contact__phone required" placeholder="Введите телефон"> <svg width="58" height="58">
+        <section class="surname">
+          <div class="surname__wrapper">
+            <h2 class="surname__title">Представьтесь:</h2>
+            <label class="surname__field">
+              <span class="surname__text">ИМЯ*:</span>
+              <input class="surname__input" type="text" placeholder="Петр" required>
+            </label>
+            <label class="surname__field">
+              <span class="surname__text">ФАМИЛИЯ*:</span>
+              <input class="surname__input" type="text" placeholder="Пустота" required>
+            </label>
+            <label class="surname__field">
+              <span class="surname__text">ОТЧЕСТВО:</span>
+              <input class="surname__input" type="text" placeholder="Викторович">
+            </label>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="contact__wrapper">
+            <h2 class="contact__header">Контактная информация:</h2>
+            <label class="contact__field">
+              <span class="contact__text">Контактный телефон*:</span>
+              <input class="contact__input" type="text" name="contact-phone" required placeholder="Введите телефон">
+              <svg class="contact__icon" width="58" height="58">
                 <use xlink:href="img/sprite.svg#phone"></use>
-              </svg> <label class="contact__mail-lable">Электронная почта*:</label> <input class="contact__mail-input"
-                type="email" placeholder="Введите e-mail" name="contact__mail" id="contact__name" required> <svg
-                width="58" height="58">
+              </svg>
+            </label>
+            <label class="contact__field">
+              <span class="contact__text">Электронная почта*:</span>
+              <input class="contact__input" type="email" placeholder="Введите e-mail" name="contact-mail" required>
+              <svg class="contact__icon" width="58" height="58">
                 <use xlink:href="img/sprite.svg#email"></use>
               </svg>
-            </div>
-          </section>
-        </div>
+            </label>
+          </div>
+        </section>
       </div>
     </form>
     <section class="impression">
       <div class="impression__wrapper">
-        <h2 class="visually-hidden">общее впечатление</h2>
-        <fieldset class="impression__group"><label class="impression__title">Ваше общее впечатление:</label>
+        <fieldset class="impression__group">
+          <h2 class="impression__title">Ваше общее впечатление:</h2>
           <ul class="impression__list">
             <li class="impression__item">
               <label class="impression__control"><input class="impression__radio visually-hidden" type="radio" checked

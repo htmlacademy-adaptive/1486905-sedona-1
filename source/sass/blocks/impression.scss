@@ -1,8 +1,6 @@
 .impression__wrapper {
-  padding-top: 19px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 19px;
+  padding: 24px 20px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .impression__title {
@@ -13,6 +11,8 @@
   color: #000000;
   display: block;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .impression__control {
@@ -20,13 +20,14 @@
   line-height: 26px;
   font-weight: 800;
   color: #000000;
+  display: block;
 }
 
 .impression__text {
   position: relative;
   padding-left: 62px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
 }
 
 .impression__text::before {
@@ -55,8 +56,6 @@
 .impression__item {
   display: block;
   text-decoration: none;
-  padding-top: 31px;
-  padding-bottom: 5px;
 }
 
 .impression__list {
@@ -83,6 +82,8 @@
 
 .impression__group {
   border-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .impression__radio:checked + .impression__text::after {
