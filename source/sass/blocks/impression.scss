@@ -22,11 +22,40 @@
   color: #000000;
 }
 
+.impression__text {
+  position: relative;
+  padding-left: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.impression__text::before {
+  content: "";
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+  background-color: #f2f2ff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.impression__text::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+  background-color: #333333;
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  opacity: 0;
+}
+
 .impression__item {
   display: block;
   text-decoration: none;
   padding-top: 31px;
-  padding-left: 20px;
   padding-bottom: 5px;
 }
 
@@ -54,4 +83,8 @@
 
 .impression__group {
   border-style: none;
+}
+
+.impression__radio:checked + .impression__text::after {
+  opacity: 1;
 }
