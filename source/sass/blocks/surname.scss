@@ -4,6 +4,21 @@
   padding-right: 20px;
   padding-bottom: 39px;
   border-top: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding-top: 68px;
+    padding-right: 29px;
+    padding-bottom: 44px;
+    padding-left: 50px;
+    border-right: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-left: 110px;
+    padding-right: 49px;
+  }
 }
 
 .surname__title {
@@ -14,6 +29,17 @@
   color: #000000;
   text-align: center;
   padding-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 9px;
+  }
 }
 
 .surname__text {
@@ -24,6 +50,10 @@
   color: #333333;
   margin-bottom: 0px;
   padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+  }
 }
 
 .surname__input {
@@ -35,10 +65,16 @@
   background-color: #f2f2f2;
   border-width: inherit;
   padding: 16px;
-  width: 280px;
+  width: 100%;
+}
+
+.surname__field {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: 10px;
+  }
 }
 
 .surname__field:not(:last-child) {
   margin-bottom: 16px;
-  display: block;
 }

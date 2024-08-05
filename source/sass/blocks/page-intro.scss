@@ -4,12 +4,12 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 166px 18px;
+    padding: 64px 166px 18px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 99px 385px 0px;
+    padding: 116px 380px 0px;
     border-bottom: none;
   }
 }
@@ -30,7 +30,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 33px;
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 31px;
+    }
   }
 }
 
