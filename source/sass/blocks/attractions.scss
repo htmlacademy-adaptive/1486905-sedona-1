@@ -96,6 +96,11 @@
   @media (min-width: $tablet-width) {
     left: 124px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 31px;
+    left: 145px;
+  }
 }
 
 .attractions__text::after {
@@ -111,6 +116,11 @@
   @media (min-width: $tablet-width) {
     left: 136px;
     top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 157px;
+    top: 46px;
   }
 }
 
@@ -137,11 +147,21 @@ span.attractions__text.attractions__text--tablet::before {
     top: 0;
     left: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 31px;
+    left: 11px;
+  }
 }
 
 span.attractions__text.attractions__text--tablet::after {
   @media (min-width: $tablet-width) {
     top: 15px;
     left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 46px;
+    left: 22px;
   }
 }
