@@ -69,8 +69,8 @@
 }
 
 .surname__field {
+  display: block;
   @media (min-width: $tablet-width) {
-    display: block;
     margin-left: 10px;
   }
 }

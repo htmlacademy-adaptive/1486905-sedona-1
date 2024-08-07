@@ -29,6 +29,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,22 +52,8 @@
   padding-top: 11.5px;
   padding-bottom: 11.5px;
   display: block;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 138px;
-    padding-top: 18.5px;
-  }
 }
 
-.impression__text--tablet {
-  @media (min-width: $tablet-width) {
-    padding-left: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 96px;
-  }
-}
 .impression__text::before {
   content: "";
   width: 46px;
@@ -76,11 +63,6 @@
   position: absolute;
   left: 0;
   top: 0;
-
-  @media (min-width: $tablet-width) {
-    left: 76px;
-    top: 7px;
-  }
 }
 
 .impression__text::after {
@@ -93,34 +75,6 @@
   left: 15px;
   top: 14px;
   opacity: 0;
-
-  @media (min-width: $tablet-width) {
-    left: 91px;
-    top: 22px;
-  }
-}
-
-.impression__text.impression__text--tablet::before {
-  @media (min-width: $tablet-width) {
-    left: 8px;
-    top: 7px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 34px;
-  }
-}
-
-.impression__text.impression__text--tablet::after {
-  @media (min-width: $tablet-width) {
-    left: 0px;
-    top: 0px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 49px;
-    top: 21px;
-  }
 }
 
 .impression__item {
@@ -140,8 +94,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 6px;
+    max-width: 575px;
+    margin: 0 auto;
+    gap: 14px;
   }
 }
 
@@ -160,24 +115,4 @@
 
 .impression__radio:checked + .impression__text::after {
   opacity: 1;
-}
-
-.impression__text--last {
-  @media (min-width: $desktop-width) {
-    padding-left: 101px;
-  }
-}
-
-span.impression__text.impression__text--last::before {
-  @media (min-width: $desktop-width) {
-    left: 39px;
-    top: 7px;
-  }
-}
-
-span.impression__text.impression__text--last::after {
-  @media (min-width: $desktop-width) {
-    left: 54px;
-    top: 21px;
-  }
 }
