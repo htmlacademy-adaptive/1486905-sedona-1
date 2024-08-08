@@ -35,9 +35,10 @@
   &::after {
     content: "";
     position: absolute;
+    top: 125%;
     left: 0;
     right: 0;
-    transform: translate(-50%);
+    transform: translate(-7%);
     height: 1px;
     background-color: #dbdbdb;
   }
