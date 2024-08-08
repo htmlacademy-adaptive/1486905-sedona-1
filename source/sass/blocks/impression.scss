@@ -8,10 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 97px;
-    padding-right: 97px;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding: 28px 97px 45px;
   }
 }
 
@@ -30,12 +27,31 @@
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 27px;
+    max-width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translate(-50%);
+    height: 1px;
+    background-color: #dbdbdb;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -17px;
-    margin-bottom: 37px;
+    margin-bottom: 44px;
   }
+}
+
+.impression__title span {
+  position: relative;
+  background-color: #fff;
+  padding: 0 66px;
+  z-index: 1;
 }
 
 .impression__control {
@@ -102,8 +118,10 @@
 
 @media (min-width: $desktop-width) {
   .impression__list {
-    display: flex;
     gap: 28px;
+    max-width: 855px;
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 280px);
   }
 }
 

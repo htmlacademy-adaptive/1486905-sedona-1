@@ -24,6 +24,10 @@
     padding-right: 3px;
     margin-bottom: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
 }
 
 .attractions__control {
@@ -59,7 +63,8 @@
 @media (min-width: $desktop-width) {
   .attractions__list {
     display: flex;
-    gap: 55px;
+    gap: 64px;
+    max-width: 870px;
   }
 }
 
