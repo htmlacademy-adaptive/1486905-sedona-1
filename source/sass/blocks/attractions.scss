@@ -47,11 +47,13 @@
 }
 
 .attractions__title span {
-  position: relative;
-  background-color: #fff;
-  padding: 0 66px;
-  z-index: 1;
-  display: inline-block;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: #fff;
+    padding: 0 66px;
+    z-index: 1;
+    display: inline-block;
+  }
 }
 
 .attractions__control {

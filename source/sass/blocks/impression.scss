@@ -51,10 +51,12 @@
 }
 
 .impression__title span {
-  position: relative;
-  background-color: #fff;
-  padding: 0 66px;
-  z-index: 1;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: #fff;
+    padding: 0 66px;
+    z-index: 1;
+  }
 }
 
 .impression__control {
