@@ -16,6 +16,7 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -23,11 +24,29 @@
     padding-top: 2px;
     padding-right: 3px;
     margin-bottom: 28px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      height: 1px;
+      background-color: #dbdbdb;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 59px;
   }
+}
+
+.attractions__title span {
+  position: relative;
+  background-color: #fff;
+  padding: 0 66px;
+  z-index: 1;
 }
 
 .attractions__control {
