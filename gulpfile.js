@@ -23,6 +23,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -30,7 +31,7 @@ export const styles = () => {
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(htmlmin({ collapseWhitespace: false }))
   .pipe(gulp.dest('build'));
 }
 
@@ -110,7 +111,7 @@ const reload =(done) => {
 //Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.sass', gulp.series(styles));
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }

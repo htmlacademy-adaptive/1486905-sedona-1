@@ -1,18 +1,62 @@
 .impression__wrapper {
-  padding-top: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 24px;
+  padding: 24px 20px;
+  border-top: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding: 20px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 97px 45px;
+  }
 }
 
 .impression__title {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   display: block;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 27px;
+    max-width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+    max-width: 960px;
+  }
+}
+
+.impression__title span {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: #fff;
+    padding: 0 66px;
+    z-index: 1;
+  }
 }
 
 .impression__control {
@@ -20,6 +64,38 @@
   line-height: 26px;
   font-weight: 800;
   color: #000000;
+  display: block;
+}
+
+.impression__text {
+  position: relative;
+  padding-left: 62px;
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+  display: block;
+}
+
+.impression__text::before {
+  content: "";
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+  background-color: #f2f2ff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.impression__text::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  background-color: #333333;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  opacity: 0;
 }
 
 .impression__item {
@@ -30,21 +106,36 @@
 .impression__list {
   margin: 0;
   padding: 0;
+  display: grid;
+  gap: 12px;
 }
 
-@media (min-width: $tablet-width){
-.impression__list {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
+@media (min-width: $tablet-width) {
+  .impression__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 575px;
+    margin: 0 auto;
+    gap: 14px;
+  }
 }
 
-@media (min-width: $desktop-width){
-.impression__list {
-display: flex;
-gap: 28px;
+@media (min-width: $desktop-width) {
+  .impression__list {
+    gap: 28px;
+    max-width: 855px;
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 280px);
+  }
 }
+
+.impression__group {
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.impression__radio:checked + .impression__text::after {
+  opacity: 1;
 }

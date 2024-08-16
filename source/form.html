@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="favicon.ico.svg">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -17,8 +17,8 @@
     <header class="main-header">
       <nav class="main-nav main-nav--closed main-nav--nojs"><button class="main-nav__toggle" type="button"><span
             class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper"><a class="site-list__link logo" href="index.html"><img src="img/logotype.svg"
-              width="185" height="96" alt="logo"></a>
+        <div class="main-nav__wrapper"><a class="logo" href="index.html"><img src="img/logotype.svg" width="185"
+              height="96" alt="logo"></a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
             <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
@@ -30,95 +30,138 @@
     </header>
     <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ</h1>
     <section class="banner">
-      <div class="banner__wrapper">
+      <div class="banner__wrapper banner__wrapper--catalog">
         <header class="banner__header">
           <h2 class="visually-hidden">SEDONA</h2>
-          <div class="banner__slogan"><img class="banner__text" src="img/sedona-text.svg" width="229" height="39"
-              alt="sedona-text"></div>
+          <div class="banner__slogan banner__slogan--catalog">
+            <img class="banner__text" src="img/sedona-text.svg" width="229" height="39" alt="sedona-text">
+          </div>
         </header>
       </div>
     </section>
-    <section class="review">
-      <div class="review__wrapper">
-        <h2 class="review__header">Оставьте свой отзыв</h2>
-        <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях</p>
-      </div>
+    <section class="page-intro page-intro--form">
+      <h2 class="page-intro__header">Оставьте свой отзыв</h2>
+      <p class="page-intro__content">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
     </section>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <div class="communication">
-        <div>
-          <section class="surname">
-            <div class="surname__wrapper">
-              <h2 class="surname__title">Представьтесь:</h2>
-              <p class="surname__name">ИМЯ*:</p><input class="surname__input" type="text" id="name" placeholder="Петр"
-                required>
-              <p class="surname__surmname">ФАМИЛИЯ*:</p><input class="surname__input" type="text" id="surname"
-                placeholder="Пустота" required>
-              <p class="surname__patronymic">ОТЧЕСТВО:</p><input class="surname__input" type="text" id="patronymic"
-                placeholder="Викторович">
-            </div>
-          </section>
-        </div>
-        <div>
-          <section class="contact">
-            <div class="contact__wrapper">
-              <h2 class="contact__header">Контактная информация:</h2><label class="contact__phone-lable">Контактный
-                телефон*:</label> <input class="contact__phone-input" type="text" id="contat__phone"
-                name="contact__phone required" placeholder="Введите телефон"> <svg width="58" height="58">
+        <section class="surname">
+          <div class="surname__wrapper">
+            <h2 class="surname__title">Представьтесь:</h2>
+            <label class="surname__field">
+              <span class="surname__text">ИМЯ*:</span>
+              <input class="surname__input" type="text" placeholder="Петр" required>
+            </label>
+            <label class="surname__field">
+              <span class="surname__text">ФАМИЛИЯ*:</span>
+              <input class="surname__input" type="text" placeholder="Пустота" required>
+            </label>
+            <label class="surname__field">
+              <span class="surname__text">ОТЧЕСТВО:</span>
+              <input class="surname__input" type="text" placeholder="Викторович">
+            </label>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="contact__wrapper">
+            <h2 class="contact__header">Контактная информация:</h2>
+            <label class="contact__field">
+              <span class="contact__text">Контактный телефон*:</span>
+              <input class="contact__input" type="text" name="contact-phone" required placeholder="Введите телефон">
+              <svg class="contact__icon" width="58" height="58">
                 <use xlink:href="img/sprite.svg#phone"></use>
-              </svg> <label class="contact__mail-lable">Электронная почта*:</label> <input class="contact__mail-input"
-                type="email" placeholder="Введите e-mail" name="contact__mail" id="contact__name" required> <svg
-                width="58" height="58">
+              </svg>
+            </label>
+            <label class="contact__field">
+              <span class="contact__text">Электронная почта*:</span>
+              <input class="contact__input" type="email" placeholder="Введите e-mail" name="contact-mail" required>
+              <svg class="contact__icon" width="58" height="58">
                 <use xlink:href="img/sprite.svg#email"></use>
               </svg>
-            </div>
-          </section>
-        </div>
+            </label>
+          </div>
+        </section>
       </div>
     </form>
     <section class="impression">
       <div class="impression__wrapper">
-        <h2 class="visually-hidden">общее впечатление</h2>
-        <fieldset class="impression__group"><label class="impression__title">Ваше общее впечатление:</label>
+        <fieldset class="impression__group">
+          <h2 class="impression__title">
+            <span>Ваше общее впечатление:</span>
+          </h2>
           <ul class="impression__list">
-            <li class="impression__item"><label class="impression__control"><input class="impression__radio"
-                  type="radio" name="impression__group" value="Скорее положительное"> Скорее положительное</label></li>
-            <li class="impression__item"><label class="impression__control"><input class="impression__radio"
-                  type="radio" name="impression__group" value="Скорее отрицательное"> Скорее отрицательное</label></li>
-            <li class="impression__item"><label class="impression__control"><input class="impression__radio"
-                  type="radio" name="impression__group" value="Затрудняюсь ответить"> Затрудняюсь ответить</label></li>
+            <li class="impression__item">
+              <label class="impression__control"><input class="impression__radio visually-hidden" type="radio" checked
+                  name="impression__group" value="Скорее положительное">
+                <span class="impression__text">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control"><input class="impression__radio visually-hidden" type="radio"
+                  name="impression__group" value="Скорее отрицательное">
+                <span class="impression__text impression__text--tablet">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="impression__radio visually-hidden" type="radio" name="impression__group"
+                  value="Затрудняюсь ответить">
+                <span class="impression__text impression__text--last">Затрудняюсь ответить</span>
+              </label>
+            </li>
           </ul>
         </fieldset>
       </div>
     </section>
     <section class="attractions">
       <div class="attractions__wrapper">
-        <h2 class="visually-hidden">впечатление о достопримечательностях</h2>
-        <fieldset class="attractions__group"><label class="attractions__title">посещенные достопримечательности:</label>
+        <fieldset class="attractions__group">
+          <h2 class="attractions__title">
+            <span>посещенные<br class="attractions__br">
+              достопримечательности:</span>
+          </h2>
           <ul class="attractions__list">
-            <li class="attractions__item"><label class="attractions__control"><input class="attractions__checkbox"
-                  type="checkbox" name="attractions__group" value=" Мост Дьявола" checked="checked"> Мост
-                Дьявола</label></li>
-            <li class="attractions__item"><label class="attractions__control"><input class="attractions__checkbox"
-                  type="checkbox" name="attractions__group" value="Гора-Колокол" checked="checked"> Гора-Колокол</label>
+            <li class="attractions__item">
+              <label class="attractions__control">
+                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                  value=" Мост Дьявола" checked="checked">
+                <span class="attractions__text">Мост Дьявола</span>
+              </label>
             </li>
-            <li class="attractions__item"><label class="attractions__control"><input class="attractions__checkbox"
-                  type="checkbox" name="attractions__group" value="Красные скалы" checked="checked"> Красные
-                скалы</label></li>
-            <li class="attractions__item"><label class="attractions__control"><input class="attractions__checkbox"
-                  type="checkbox" name="attractions__group" value="Слайд-парк"> Слайд-парк</label></li>
+            <li class="attractions__item">
+              <label class="attractions__control">
+                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                  value="Гора-Колокол" checked="checked">
+                <span class="attractions__text attractions__text--tablet">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="attractions__item">
+              <label class="attractions__control">
+                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                  value="Слайд-парк" checked="checked">
+                <span class="attractions__text">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="attractions__item">
+              <label class="attractions__control">
+                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                  value="Красные скалы">
+                <span class="attractions__text attractions__text--tablet">Красные скалы</span>
+              </label>
+            </li>
           </ul>
         </fieldset>
       </div>
     </section>
     <section class="review">
       <div class="review__wrapper">
-        <h2 class="review__title">Опишите свои эмоции:</h2><textarea class="review__textarea" id="review__feedback"
-          name="review__feedback" rows="4" cols="30">
-          Опишите подробно все свои
-          восторги
-          </textarea> <a class="review__button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+        <h2 class="review__title">
+          <span>Опишите свои эмоции:</span>
+        </h2>
+        <textarea class="review__textarea" name="review-feedback" rows="4" cols="30"
+          placeholder="Опишите подробно все свои восторги"></textarea>
+        <a class="review__button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
         <p class="review__footnote">* — обязательные поля</p>
       </div>
     </section>
@@ -142,13 +185,40 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright"><b class="copyright__text">РАЗРАБОТАНО</b> <a
-            class="copyright__link" href="/https:/htmlacademy.ru/intensive/adaptive"><svg width="29" height="36">
+            class="copyright__link" href="/https:/htmlacademy.ru/intensive/adaptive">
+            <svg class="main-footer__svg" width="29" height="36">
               <use xlink:href="img/sprite.svg#html"></use>
             </svg></a></div>
       </div>
     </footer>
   </div>
   <script src="js/script.js"></script>
+  <div class="modal modal--close">
+    <div class="modal__failure">
+      <section class="modal__content">
+        <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button">
+          OK
+        </button>
+      </section>
+    </div>
+  </div>
+
+  <div class="modal modal--send modal--close">
+    <div class="modal__failure">
+      <section class="modal__body">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text"> Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+          его на сайте.</p>
+      </section>
+      <div class="modal__btn-wrap">
+        <button class="modal__button">
+          Закрыть окно
+        </button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

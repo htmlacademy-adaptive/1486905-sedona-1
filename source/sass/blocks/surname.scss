@@ -1,29 +1,77 @@
 .surname__wrapper {
-  padding-top: 24px;
+  padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 39px;
+  border-top: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding-top: 68px;
+    padding-right: 29px;
+    padding-bottom: 44px;
+    padding-left: 50px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 75px;
+      bottom: 35px;
+      right: 0;
+      width: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-left: 110px;
+    padding-right: 49px;
+
+    &::after {
+      top: 36px;
+    }
+  }
 }
 
 .surname__title {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  padding-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 9px;
+  }
 }
 
-.surname__name {
+.surname__text {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
+  margin-bottom: 0px;
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+  }
 }
 
 .surname__input {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
@@ -31,5 +79,16 @@
   background-color: #f2f2f2;
   border-width: inherit;
   padding: 16px;
-  width: -webkit-fill-available;
+  width: 100%;
+}
+
+.surname__field {
+  display: block;
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+  }
+}
+
+.surname__field:not(:last-child) {
+  margin-bottom: 16px;
 }

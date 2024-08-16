@@ -1,27 +1,31 @@
 .review__wrapper {
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 23px;
+  border-top: 1px solid #e5e5e5;
 
-  @media (min-width:$tablet-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+  @media (min-width: $tablet-width) {
+    padding: 25px 60px 79px;
+    border-top: none;
   }
 
-  @media (min-width:$desktop-width) {
-    padding-left: 256px;
-    padding-right: 256px;
+  @media (min-width: $desktop-width) {
+    padding-left: 216px;
+    padding-right: 216px;
   }
 }
 
 .review__header {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  padding-bottom: 9px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
   }
 }
@@ -29,7 +33,7 @@
 .review__text {
   font-size: 14px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   color: #333333;
   text-align: center;
@@ -42,17 +46,67 @@
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-top: -5px;
+    margin-bottom: 27px;
+    max-width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: inherit;
+    margin-left: -97px;
+    margin-right: -97px;
+  }
+}
+
+.review__title span {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: #fff;
+    padding: 0 66px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 75px;
+  }
 }
 
 .review__textarea {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
   color: #0000004d;
   background-color: #f2f2f2;
   padding: 16px;
-  width: 85%;
+  width: 100%;
+  border-style: none;
+  min-height: 150px;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 160px;
+    margin-bottom: 42px;
+  }
 }
 
 .review__button {
@@ -60,7 +114,7 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 21px;
   line-height: 26px;
   font-weight: 800;
@@ -68,11 +122,13 @@
   width: max-content;
   padding: 16px 49px;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .review__button {
+  @media (min-width: $tablet-width) {
+    padding: 16px 71px;
     margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 16px 101px;
   }
 }
 
@@ -82,4 +138,13 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: end;
+  margin: 0;
+  color: rgba(51, 51, 51, 0.6);
+  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    margin-top: -35px;
+    color: #333;
+  }
 }

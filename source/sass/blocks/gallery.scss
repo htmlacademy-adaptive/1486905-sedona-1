@@ -1,17 +1,20 @@
 .gallery__header {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
-.gallery__header {
-  font-size: 30px;
-  line-height: 26px;
-}
+  .gallery__header {
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 8px;
+  }
 }
 
 .gallery__text {
@@ -21,6 +24,16 @@
   text-transform: uppercase;
   color: #333333;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 171px;
+    padding-right: 171px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 382px;
+    padding-right: 384px;
+  }
 }
 
 .gallery__description {
@@ -29,76 +42,179 @@
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
+  padding-top: 10px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .gallery__author {
-font-size: 14px;
-line-height: 21px;
-font-weight: 400;
-color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .gallery__likes {
   font-size: 14px;
   line-height: 21px;
   font-weight: 800;
-  color:#000000;
+  color: #000000;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
-@media (min-width: $tablet-width){
+.gallery__button {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-right: 5px;
+    background-color: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
 .gallery__image {
-background-color: #F2F2F2;
+  margin: 0 auto;
+  padding: 25px 20px 24px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
 
-}
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
-@media (min-width: $desktop-width){
-.gallery__image {
-background-color: #FFFFFF;
-}
+.gallery__image--indentation {
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0px;
+  }
 }
 
-@media (min-width: $tablet-width){
 .gallery__container {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 49px;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 73px;
+    padding-left: 0;
+    max-width: 1200px;
+  }
 }
 
-@media (min-width: $desktop-width){
-.gallery__container {
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-}
-}
-
-@media (min-width: $tablet-width){
-.gallery__image--grid {
-grid-column-start: 1;
-grid-column-end: 3;
-}
+@media (min-width: $tablet-width) {
+  .gallery__image--grid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
-@media (min-width: $desktop-width){
-.gallery__image--grid {
-grid-column-start: 1;
-grid-column-end: 4;
-}
+@media (min-width: $desktop-width) {
+  .gallery__image--grid {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 }
 
 .gallery__box {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    background-color: #f2f2f2;
+    padding-top: 7px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 
-.gallery__box_for_likes {
+.gallery__box-for-likes {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+
   @media (min-width: $tablet-width) {
-    display: flex;
     gap: 4px;
+  }
+}
+
+.gallery__box-for-text {
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+    padding-left: 20px;
+  }
+}
+
+.gallery__wrapper {
+  padding-top: 38px;
+}
+
+.gallery__picture {
+  display: block;
+}
+
+.gallery__box--desktop {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
+    padding-top: 2px;
+    padding-left: 5px;
+  }
+}
+
+.gallery__box--desktop .gallery__author {
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
+  }
+}
+
+.gallery__box--desktop .gallery__box-for-likes {
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
   }
 }

@@ -1,74 +1,96 @@
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .communication {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
 }
 
 .contact__wrapper {
-padding-top: 24px;
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 34px;
-display: grid;
-grid-template-columns: 1fr 58px;
-grid-template-rows: repeat(2, 1fr);
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+  border-top: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding: 68px 59px 45px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 120px 45px 47px;
+  }
 }
 
 .contact__header {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   grid-column-start: 1;
   grid-column-end: 3;
+  padding-left: 21px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    padding-left: 11px;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 79px;
+  }
 }
 
-.contact__phone-lable {
+.contact__field {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  position: relative;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 3px;
+  }
 }
 
-.contact__mail-lable {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #333333;
-  grid-column-start: 1;
-  grid-column-end: 3;
+.contact__field:not(:last-child) {
+  margin-bottom: 16px;
 }
 
-.contact__phone-input {
-  font-family: 'PT Sans';
+.contact__input {
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
   color: #000000;
   background-color: #f2f2f2;
-  border-width: inherit;
-  padding: 16px;
-  width: -webkit-fill-available;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 7px;
+  padding-left: 16px;
+  width: 100%;
 }
 
-.contact__mail-input {
-  font-family: 'PT Sans';
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 800;
-  color: #000000;
-  background-color: #f2f2f2;
-  border-width: inherit;
-  padding: 16px;
+.contact__text {
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+  }
+}
+
+.contact__icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

@@ -1,7 +1,7 @@
-
+@import "fonts.scss";
+@import "global.scss";
 @import "variables.scss";
 @import "blocks/main-header.scss";
-@import "blocks/fonts.scss";
 @import "blocks/common.scss";
 @import "blocks/banner.scss";
 @import "blocks/advantages.scss";
@@ -22,3 +22,5 @@
 @import "blocks/main-container.scss";
 @import "blocks/logo.scss";
 @import "blocks/copyright.scss";
+@import "blocks/page-intro.scss";
+@import "blocks/modal.scss";
