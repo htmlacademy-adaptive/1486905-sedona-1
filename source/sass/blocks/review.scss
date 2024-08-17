@@ -122,6 +122,7 @@
   width: max-content;
   padding: 16px 49px;
   margin: 0 auto;
+  border-style: none;
 
   @media (min-width: $tablet-width) {
     padding: 16px 71px;
@@ -130,6 +131,19 @@
   @media (min-width: $desktop-width) {
     padding: 16px 101px;
   }
+}
+
+.review__button:hover {
+  background-color: #669ec0;
+}
+
+.review__button:active {
+  background-color: #5496bd;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.review__button--disabled {
+  background-color: #e5e5e5;
 }
 
 .review__footnote {

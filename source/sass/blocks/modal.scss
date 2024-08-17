@@ -108,3 +108,16 @@
   padding-right: 60px;
   width: 100%;
 }
+
+.modal__button:hover {
+  background-color: #669ec0;
+}
+
+.modal__button:active {
+  background-color: #5496bd;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.modal__button--disabled {
+  background-color: #e5e5e5;
+}
