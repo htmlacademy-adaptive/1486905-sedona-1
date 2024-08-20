@@ -68,7 +68,7 @@
             <h2 class="contact__header">Контактная информация:</h2>
             <label class="contact__field">
               <span class="contact__text">Контактный телефон*:</span>
-              <input class="contact__input" type="text" name="contact-phone" required placeholder="Введите телефон">
+              <input class="contact__input" type="tel" name="contact-phone" required placeholder="Введите телефон">
               <svg class="contact__icon" width="58" height="58">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
@@ -83,116 +83,132 @@
           </div>
         </section>
       </div>
+
+      <section class="impression">
+        <div class="impression__wrapper">
+          <fieldset class="impression__group">
+            <h2 class="impression__title">
+              <span>Ваше общее впечатление:</span>
+            </h2>
+            <ul class="impression__list">
+              <li class="impression__item">
+                <label class="impression__control"><input class="impression__radio visually-hidden" type="radio" checked
+                    name="impression__group" value="Скорее положительное">
+                  <span class="impression__text">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__control"><input class="impression__radio visually-hidden" type="radio"
+                    name="impression__group" value="Скорее отрицательное">
+                  <span class="impression__text impression__text--tablet">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="impression__radio visually-hidden" type="radio" name="impression__group"
+                    value="Затрудняюсь ответить">
+                  <span class="impression__text impression__text--last">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </section>
+      <section class="attractions">
+        <div class="attractions__wrapper">
+          <fieldset class="attractions__group">
+            <h2 class="attractions__title">
+              <span>посещенные<br class="attractions__br">
+                достопримечательности:</span>
+            </h2>
+            <ul class="attractions__list">
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                    value=" Мост Дьявола" checked="checked">
+                  <span class="attractions__text">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                    value="Гора-Колокол" checked="checked">
+                  <span class="attractions__text attractions__text--tablet">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                    value="Слайд-парк" checked="checked">
+                  <span class="attractions__text">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
+                    value="Красные скалы">
+                  <span class="attractions__text attractions__text--tablet">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </section>
+      <section class="review">
+        <div class="review__wrapper">
+          <h2 class="review__title">
+            <span>Опишите свои эмоции:</span>
+          </h2>
+          <textarea class="review__textarea" name="review-feedback" rows="4" cols="30"
+            placeholder="Опишите подробно все свои восторги"></textarea>
+          <button class="review__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <p class="review__footnote">* — обязательные поля</p>
+        </div>
+      </section>
     </form>
-    <section class="impression">
-      <div class="impression__wrapper">
-        <fieldset class="impression__group">
-          <h2 class="impression__title">
-            <span>Ваше общее впечатление:</span>
-          </h2>
-          <ul class="impression__list">
-            <li class="impression__item">
-              <label class="impression__control"><input class="impression__radio visually-hidden" type="radio" checked
-                  name="impression__group" value="Скорее положительное">
-                <span class="impression__text">Скорее положительное</span>
-              </label>
-            </li>
-            <li class="impression__item">
-              <label class="impression__control"><input class="impression__radio visually-hidden" type="radio"
-                  name="impression__group" value="Скорее отрицательное">
-                <span class="impression__text impression__text--tablet">Скорее отрицательное</span>
-              </label>
-            </li>
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="impression__radio visually-hidden" type="radio" name="impression__group"
-                  value="Затрудняюсь ответить">
-                <span class="impression__text impression__text--last">Затрудняюсь ответить</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
-    </section>
-    <section class="attractions">
-      <div class="attractions__wrapper">
-        <fieldset class="attractions__group">
-          <h2 class="attractions__title">
-            <span>посещенные<br class="attractions__br">
-              достопримечательности:</span>
-          </h2>
-          <ul class="attractions__list">
-            <li class="attractions__item">
-              <label class="attractions__control">
-                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
-                  value=" Мост Дьявола" checked="checked">
-                <span class="attractions__text">Мост Дьявола</span>
-              </label>
-            </li>
-            <li class="attractions__item">
-              <label class="attractions__control">
-                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
-                  value="Гора-Колокол" checked="checked">
-                <span class="attractions__text attractions__text--tablet">Гора-Колокол</span>
-              </label>
-            </li>
-            <li class="attractions__item">
-              <label class="attractions__control">
-                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
-                  value="Слайд-парк" checked="checked">
-                <span class="attractions__text">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="attractions__item">
-              <label class="attractions__control">
-                <input class="attractions__checkbox visually-hidden" type="checkbox" name="attractions__group"
-                  value="Красные скалы">
-                <span class="attractions__text attractions__text--tablet">Красные скалы</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
-    </section>
-    <section class="review">
-      <div class="review__wrapper">
-        <h2 class="review__title">
-          <span>Опишите свои эмоции:</span>
-        </h2>
-        <textarea class="review__textarea" name="review-feedback" rows="4" cols="30"
-          placeholder="Опишите подробно все свои восторги"></textarea>
-        <a class="review__button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
-        <p class="review__footnote">* — обязательные поля</p>
-      </div>
-    </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag"><a class="main-footer__link" href="#">#VISITSEDONA</a></div>
+        <div class="main-footer__hashtag">
+          <a class="main-footer__link" href="#">#VISITSEDONA</a>
+        </div>
         <div class="social">
           <ul class="social__list">
-            <li class="social__item"><a class="social__link social__link-vkontakte"
-                href="https://vk.com/htmlacademy"><svg class="social__svg" width="24" height="24">
+            <li class="social__item">
+              <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy"
+                aria-label="ссылка на ВК">
+                <svg class="social__svg" width="24" height="24">
                   <use xlink:href="img/sprite.svg#vk"></use>
-                </svg></a></li>
-            <li class="social__item"><a class="social__link social__link-telegram" href="https://t.me/htmlacademy"><svg
-                  class="social__svg" width="24" height="24">
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link-telegram" href="https://t.me/htmlacademy"
+                aria-label="ссылка на Телеграм">
+                <svg class="social__svg" width="24" height="24">
                   <use xlink:href="img/sprite.svg#telegram"></use>
-                </svg></a></li>
-            <li class="social__item"><a class="social__link social__link-yotube"
-                href="https://www.youtube.com/user/htmlacademyru"><svg class="social__svg" width="24" height="24">
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link-youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="ссылка на Ютуб">
+                <svg class="social__svg" width="24" height="24">
                   <use xlink:href="img/sprite.svg#youtube"></use>
-                </svg></a></li>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright"><b class="copyright__text">РАЗРАБОТАНО</b> <a
-            class="copyright__link" href="/https:/htmlacademy.ru/intensive/adaptive">
+        <div class="main-footer__copyright copyright"><b class="copyright__text">РАЗРАБОТАНО</b>
+          <a class="copyright__link" href="/https:/htmlacademy.ru/intensive/adaptive" aria-label="ссылка на Академию">
             <svg class="main-footer__svg" width="29" height="36">
               <use xlink:href="img/sprite.svg#html"></use>
-            </svg></a></div>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
   </div>
-  <script src="js/script.js"></script>
   <div class="modal modal--close">
     <div class="modal__failure">
       <section class="modal__content">
@@ -209,8 +225,9 @@
     <div class="modal__failure">
       <section class="modal__body">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-        <p class="modal__text"> Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
-          его на сайте.</p>
+        <p class="modal__text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам.В ближайшее время
+          мы&nbsp;опубликуем
+          его на&nbsp;сайте.</p>
       </section>
       <div class="modal__btn-wrap">
         <button class="modal__button">
@@ -219,6 +236,7 @@
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.social__svg {
+  fill: #fff;
+}
+
 .social__item {
   display: block;
   text-decoration: none;
@@ -13,4 +17,17 @@
   padding-right: 11px;
   padding-bottom: 6px;
   padding-left: 12px;
+  fill: #fff;
+}
+
+.social__item:hover {
+  background-color: #669ec0;
+}
+
+.social__item:active {
+  background-color: #5496bd;
+}
+
+.social__item:active .social__svg {
+  fill: rgb(255, 255, 255, 0.3);
 }

@@ -42,8 +42,12 @@
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
-  padding-top: 10px;
+  padding-top: 16px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -98,6 +102,7 @@
     opacity: 1;
   }
 }
+
 .gallery__image {
   margin: 0 auto;
   padding: 25px 20px 24px;
@@ -216,5 +221,11 @@
 .gallery__box--desktop .gallery__box-for-likes {
   @media (min-width: $desktop-width) {
     padding-top: 4px;
+  }
+}
+
+.gallery__image--indentation:nth-child(odd) .gallery__box {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    background-color: #eaeaea;
   }
 }

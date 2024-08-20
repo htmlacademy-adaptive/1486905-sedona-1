@@ -12,12 +12,12 @@
 .modal__failure {
   position: relative;
   margin: auto;
-  padding: 42px;
+  padding: 40px 42px 34px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 400px;
-    padding: 18px 46px 32px;
+    padding: 28px 46px 32px;
   }
 }
 
@@ -51,7 +51,7 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: $font-PTSans;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -67,7 +67,10 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    padding: 18px 124px;
+    padding: 16px 122px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 39px;
   }
 }
 
@@ -93,12 +96,12 @@
 }
 
 .modal__body {
-  padding: 20px 37px 10px;
+  padding: 29px 46px 39px;
 
   @media (min-width: $tablet-width) {
     max-width: 493px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding: 18px 33px 37px;
   }
 }
 
@@ -107,4 +110,17 @@
   padding-left: 60px;
   padding-right: 60px;
   width: 100%;
+}
+
+.modal__button:hover {
+  background-color: #669ec0;
+}
+
+.modal__button:active {
+  background-color: #5496bd;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.modal__button--disabled {
+  background-color: #e5e5e5;
 }

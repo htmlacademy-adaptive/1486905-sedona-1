@@ -28,6 +28,7 @@
   padding-left: 10px;
   padding-right: 12px;
   margin-top: -3px;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -75,6 +76,7 @@
   display: block;
   margin: 0;
   padding-bottom: 36px;
+  color: #333333;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 55px;
@@ -107,7 +109,7 @@
 
 .advantages__list--grey {
   background-color: #eee;
-  color: #000000;
+  color: #333333;
   padding: 0;
 }
 
@@ -273,7 +275,7 @@
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000000;
+  color: #333333;
   padding-left: 47px;
   margin: 0;
 

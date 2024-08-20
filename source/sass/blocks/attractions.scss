@@ -1,5 +1,10 @@
 .attractions__wrapper {
   padding: 24px 20px 19px;
+  border-top: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 65px;

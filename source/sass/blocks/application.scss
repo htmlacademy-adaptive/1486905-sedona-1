@@ -25,6 +25,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
+  color: #000000;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,4 +81,17 @@
   @media (min-width: $tablet-width) {
     padding: 16px 136px;
   }
+}
+
+.application__find:hover {
+  background-color: #669ec0;
+}
+
+.application__find:active {
+  background-color: #5496bd;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.application-find--disabled {
+  background-color: #e5e5e5;
 }
