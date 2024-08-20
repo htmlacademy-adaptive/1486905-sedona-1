@@ -126,3 +126,14 @@
   display: block;
   max-height: inherit;
 }
+
+.main-nav--nojs .logo {
+  position: relative;
+  margin-bottom: -30px;
+  text-align: center;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
