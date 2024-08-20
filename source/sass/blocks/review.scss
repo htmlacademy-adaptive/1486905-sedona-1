@@ -91,7 +91,7 @@
 }
 
 .review__textarea {
-  font-family: "PT Sans";
+  font-family: $font-PTSans;
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
@@ -114,7 +114,7 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: $font-PTSans;
   font-size: 21px;
   line-height: 26px;
   font-weight: 800;
@@ -142,7 +142,7 @@
   color: rgb(255, 255, 255, 0.3);
 }
 
-.review__button--disabled {
+.review__button[disabled] {
   background-color: #e5e5e5;
 }
 
