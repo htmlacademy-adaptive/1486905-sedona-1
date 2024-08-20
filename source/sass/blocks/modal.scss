@@ -12,12 +12,12 @@
 .modal__failure {
   position: relative;
   margin: auto;
-  padding: 42px;
+  padding: 40px 42px 34px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 400px;
-    padding: 18px 46px 32px;
+    padding: 28px 46px 32px;
   }
 }
 
@@ -67,7 +67,10 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    padding: 18px 124px;
+    padding: 16px 122px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 39px;
   }
 }
 
@@ -93,12 +96,12 @@
 }
 
 .modal__body {
-  padding: 20px 37px 10px;
+  padding: 29px 46px 39px;
 
   @media (min-width: $tablet-width) {
     max-width: 493px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding: 18px 33px 37px;
   }
 }
 
